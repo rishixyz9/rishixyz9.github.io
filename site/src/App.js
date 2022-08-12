@@ -1,9 +1,10 @@
-import './App.css';
-import React, { useState, useEffect } from 'react'
-import Dropdown from './Dropdown';
-import Info from './Info';
-import pain from './pain.png'
-import './Background.js'
+import './styles/App.css';
+import React, { useState } from 'react'
+import Dropdown from './components/Dropdown';
+import Info from './components/Info';
+import pain from './static/pain.png'
+import self from './static/self-pic.jpg'
+import './scripts/Background.js'
 
 function App() {   
 
@@ -18,12 +19,12 @@ function App() {
   }
 
   return (
-    <>
+    <> 
       <canvas id='canvas'></canvas>
       <script src="Background.js"></script>
         <div className='container'>
           <div className='column-container'>
-            <img onClick={handleClick} src={pain} className="image"></img>
+            <img onClick={handleClick} alt={pain} src={self} className="image"></img>
             <Dropdown animate={dropdown} show={show} changeTab={setTab}/>
           </div>
           <div className='info-tab'>
