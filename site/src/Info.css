@@ -1,0 +1,17 @@
+.tab-header {
+    text-align: center;
+}
+
+.content {
+    text-align: justify;
+    color: rgba(255, 255, 255, 0.833);
+    padding: 1em;
+}
+
+.item {
+    font-size: .75em;
+}
+
+.subitem {
+    font-size: .5em;
+}

@@ -14,7 +14,7 @@ function Dropdown(props){
             <div className={`dropdown-wrapper ${props.animate}`}>
                 {Object.keys(items).map((item, index) =>{
                     return (
-                        <li key={index} className="dropdown-item">{items[item]}</li>
+                        <li key={index} className="dropdown-item" onClick={() => {props.changeTab(items[item])}}>{items[item]}</li>
                     )
                 })}
             </div>

@@ -3,8 +3,8 @@ window.onload = function(){
     const canvas = document.getElementById("canvas");
     const ctx = canvas.getContext("2d");
 
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    canvas.width = canvas.getBoundingClientRect().width;
+    canvas.height = canvas.getBoundingClientRect().height;
     
     ctx.fillStyle = 'white';
     
@@ -29,8 +29,8 @@ window.onload = function(){
             this.x = canvas.width / 2;
             this.y = canvas.height / 2;
             this.radius = Math.random() * .05 * canvas.width + 10;
-            this.speedX = Math.random() * 1.25 - 1;
-            this.speedY = Math.random() * 1.25 - 1;
+            this.speedX = Math.random() * 1 - 1;
+            this.speedY = Math.random() * 1 - 1;
         }
     
         update(){
@@ -56,17 +56,30 @@ window.onload = function(){
     
     let balls = []
 
+    for(let i=0; i < 10; i++){
+        balls.push(new Ball());
+    }
+
     function clicked(event){
+        const prev = balls.length;
         balls.forEach(ball => {
             const rect = canvas.getBoundingClientRect();
             const x = event.clientX - rect.left;
             const y = event.clientY - rect.top;
             let dx = ball.x - x;
             let dy = ball.y - y;
-            if(dx*dx + dy*dy < ball.radius * ball.radius){
+            let dsq = Q_rsqrt(dx*dx + dy*dy);
+            dsq = dsq/(dsq*dsq)
+            let rradius = Q_rsqrt(ball.radius*ball.radius);
+            rradius = rradius/(rradius*rradius)
+            if(dsq < rradius){
                 let sqred = ball.radius*ball.radius >> 1;
                 let temp = Q_rsqrt(sqred);
                 temp = temp/(temp*temp)
+                if(temp < 5){
+                    balls.splice(balls.indexOf(ball));
+                    return 0;
+                }
                 ball.radius = temp;
                 let copy = new Ball()
                 copy.radius = ball.radius;
@@ -74,29 +87,41 @@ window.onload = function(){
                 copy.y = ball.y;
                 copy.speedX = -ball.speedX;
                 copy.speedY = -ball.speedY;
+                ball.speedX += Math.random() * 1.25 - 1;
+                ball.speedY += Math.random() * 1.25 - 1;
                 balls.push(copy)
-                return;
+                return 0;
             }           
         });
-    }
-
-    for(let i=0; i < 20; i++){
-        balls.push(new Ball());
+        if(prev === balls.length)
+            createParticles(event)
     }
     
-    function animate(){
-        canvas.addEventListener('click', function(event) { 
-            clicked(event); 
-        }, false);
+    function createParticles(event){
+        let ball = new Ball();
+        ball.x = event.clientX;
+        ball.y = event.clientY;
+        balls.push(ball);
+    }
+
+    async function animate(){
         ctx.beginPath();
-        ctx.clearRect(0,0, canvas.width, canvas.height);
+        ctx.clearRect(0,0,canvas.width, canvas.height);
         balls.forEach(ball => ball.update());
         balls.forEach(ball => ball.draw(ctx));
+        ctx.closePath();
+
+        await new Promise(resolve => setTimeout(resolve, 12));
 
         requestAnimationFrame(animate);
+        
     }
     
-    
+    canvas.addEventListener('click', function(event) { 
+
+        clicked(event); 
+    }, false);
+
     animate();
 }
 
