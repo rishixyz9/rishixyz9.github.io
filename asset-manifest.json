@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "./static/css/main.ad6abd0a.css",
+    "main.js": "./static/js/main.f7111717.js",
+    "static/media/pain.png": "./static/media/pain.e020938b29b854c60f79.png",
+    "static/media/rishabh-vemparala-resume.pdf": "./static/media/rishabh-vemparala-resume.fce0eaffb2194b6ffee2.pdf",
+    "index.html": "./index.html",
+    "main.ad6abd0a.css.map": "./static/css/main.ad6abd0a.css.map",
+    "main.f7111717.js.map": "./static/js/main.f7111717.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ad6abd0a.css",
+    "static/js/main.f7111717.js"
+  ]
+}
