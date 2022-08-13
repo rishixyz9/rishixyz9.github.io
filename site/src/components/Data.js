@@ -18,5 +18,5 @@ const Data = {
         "LinkedIn": "https://www.linkedin.com/feed/"
     },
 }
-
+ 
 export default Data
