@@ -3,7 +3,7 @@
 }
 
 .content {
-    text-align: justify;
+    text-align: center;
     color: rgba(255, 255, 255, 0.833);
     padding: 1em;
 }
@@ -14,4 +14,5 @@
 
 .subitem {
     font-size: .5em;
+    list-style-type: none;
 }

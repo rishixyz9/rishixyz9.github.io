@@ -1,7 +1,7 @@
 const Data = {
     '': '<-- Click on me!',
-    'about': "Hi! My name is Rishabh Vemparala and I am a student at the University of Texas at Dallas studying Computer Science",
-    'resume': {
+    'About': "Hi! My name is Rishabh Vemparala and I am a student at the University of Texas at Dallas studying Computer Science",
+    'Resume': {
         'iCode: Lab Mentor and Instructor': [
             "Taught kids in the age range from 6 - 15 years old the basics about fundamental and widespread technologies such as html5, css, scratch, java, python, and lego ev3’s",
             "Utilized software such as Mcreator, IntelliJ, and Pycharm",
@@ -12,7 +12,7 @@ const Data = {
             "Utilized python, javascript, YAML, html, css, AWS, Lambda, S3, CloudFront, Api Gateway, and WAF",
         ],
     },
-    'contact': {
+    'Contact': {
         "Email": "reach2rishabh@rocketmail.com", 
         "Phone": "469-971-6426",
         "LinkedIn": "https://www.linkedin.com/feed/"

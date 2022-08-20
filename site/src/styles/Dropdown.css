@@ -21,6 +21,15 @@
     cursor: pointer;
 }
 
+.dropdown-item.active {
+    background-color: rgb(35, 35, 35);
+}
+
+.dropdown-item:hover {
+    
+    background-color: rgb(0, 120, 255);
+}
+
 .true {
     animation: pop-in 0.25s;
 }

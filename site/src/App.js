@@ -25,7 +25,7 @@ function App() {
         <div className='container'>
           <div className='column-container'>
             <img onClick={handleClick} alt={pain} src={self} className="image"></img>
-            <Dropdown animate={dropdown} show={show} changeTab={setTab}/>
+            <Dropdown animate={dropdown} show={show} changeTab={setTab} activeTab={tab}/>
           </div>
           <div className='info-tab'>
             <Info activeTab={tab}/>

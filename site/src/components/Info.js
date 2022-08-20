@@ -6,20 +6,20 @@ import PDF from '../static/rishabh-vemparala-resume.pdf';
 function Info(props){
 
     const GenerateItems = () => {
-        if(props.activeTab === 'resume'){
-            let data = Object.keys(Data['resume']).map((item, index) =>{
-                const SubItems = Data['resume'][item].map((subItem, key) =>{
+        if(props.activeTab === 'Resume'){
+            let data = Object.keys(Data['Resume']).map((item, index) =>{
+                const SubItems = Data['Resume'][item].map((subItem, key) =>{
                     return(
                         <li key={key}>{subItem}</li>
                     )
                 })
                 return(
-                    <>
-                        <p className="item" key={index}>{item}</p>
+                    <div key={index}>
+                        <p className="item">{item}</p>
                         <div className="subitem">
                             {SubItems}
                         </div>
-                    </>
+                    </div>
                 )
             })
             return(
@@ -29,16 +29,15 @@ function Info(props){
                 </>
             )
         }
-        else if(props.activeTab === 'contact'){
-            let data = Object.keys(Data['contact']).map((item, index) =>{
+        else if(props.activeTab === 'Contact'){
+            return Object.keys(Data['Contact']).map((item, index) =>{
                     return(
-                        <>
-                            <p className="item" key={index}>{item}</p>
-                            <li className="subitem" key={index}>{Data['contact'][item]}</li>
-                        </>
+                        <div key={index}>
+                            <p className="item">{item}</p>
+                            <li className="subitem">{Data['Contact'][item]}</li>
+                        </div>
                     )
             })
-            return data
         }
         else{
             return (
