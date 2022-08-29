@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "./static/css/main.75fa5684.css",
-    "main.js": "./static/js/main.cba07600.js",
+    "main.css": "./static/css/main.ccc0954a.css",
+    "main.js": "./static/js/main.81bd19cb.js",
     "static/media/self-pic.jpg": "./static/media/self-pic.52c1b353cb9e9e0be2b6.jpg",
     "static/media/pain.png": "./static/media/pain.e020938b29b854c60f79.png",
     "static/media/rishabh-vemparala-resume.pdf": "./static/media/rishabh-vemparala-resume.fce0eaffb2194b6ffee2.pdf",
     "index.html": "./index.html",
-    "main.75fa5684.css.map": "./static/css/main.75fa5684.css.map",
-    "main.cba07600.js.map": "./static/js/main.cba07600.js.map"
+    "main.ccc0954a.css.map": "./static/css/main.ccc0954a.css.map",
+    "main.81bd19cb.js.map": "./static/js/main.81bd19cb.js.map"
   },
   "entrypoints": [
-    "static/css/main.75fa5684.css",
-    "static/js/main.cba07600.js"
+    "static/css/main.ccc0954a.css",
+    "static/js/main.81bd19cb.js"
   ]
 }
