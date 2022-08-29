@@ -26,6 +26,7 @@
   position: absolute;
   display: flex;
   flex-direction: row;
+  overflow: hidden;
 }
 
 .image {
@@ -53,4 +54,24 @@
   height: 100%;
   color: rgba(255, 255, 255, 0.833);
   padding: 1em;
+}
+
+.container.mobile {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 25em;
+  height: 30em;
+}
+
+.column-container.mobile {
+  width: 100%;
+  overflow: scroll;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+.info-tab.mobile {
+  height: auto;
+  position: relative;
 }

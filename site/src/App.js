@@ -12,29 +12,53 @@ function App() {
   const [show, setShow] = useState(false);
   const [tab, setTab] = useState('');
 
+  // const items = {
+  //   0: 'Resume',
+  //   1: 'About',
+  //   2: 'Contact',
+  // }
+
   const handleClick = async() => {
       setDropdown(!dropdown)
       await new Promise(resolve => setTimeout(resolve, 100));
       setShow(!show);
   }
 
-  return (
-    <> 
-      <canvas id='canvas'></canvas>
-      <script src="Background.js"></script>
-        <div className='container'>
-          <div className='column-container'>
+  if(window.innerWidth >= 600)
+    return (
+      <> 
+        <canvas id='canvas'></canvas>
+        <script src="Background.js"></script>
+          <div className='container'>
+            <div className='column-container'>
+              <img onClick={handleClick} alt={pain} src={self} className="image"></img>
+              <Dropdown animate={dropdown} show={show} changeTab={setTab} activeTab={tab}/>
+            </div>
+            <div className='info-tab'>
+              <Info activeTab={tab}/>
+            </div>
+
+          </div>
+      </>
+    );
+  else{
+    return (
+      <> 
+        <canvas id='canvas'></canvas>
+        <script src="Background.js"></script>
+        <div className='container mobile'>
+          <div className='column-container mobile'>
             <img onClick={handleClick} alt={pain} src={self} className="image"></img>
             <Dropdown animate={dropdown} show={show} changeTab={setTab} activeTab={tab}/>
-          </div>
-          <div className='info-tab'>
-            <Info activeTab={tab}/>
+            <div className='info-tab mobile'>
+              <Info activeTab={tab}/>
+            </div>
           </div>
 
         </div>
-    </>
-
-  );
+      </>
+    )
+  }
 }
 
 export default App;

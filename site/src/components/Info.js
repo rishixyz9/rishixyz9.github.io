@@ -25,7 +25,7 @@ function Info(props){
             return(
                 <>
                 {data}
-                <a className="subitem" rel="noreferrer" target="_blank" href={PDF}>complete resume</a>
+                <a className="subitem subitem-box" rel="noreferrer" target="_blank" href={PDF}>complete resume</a>
                 </>
             )
         }
