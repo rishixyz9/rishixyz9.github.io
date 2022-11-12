@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+}
+
+#dropdown {
+  visibility: hidden;
+  color: transparent;
+}
+
+@keyframes slide {
+  0% {
+    visibility: visible;
+    height: 0vh;
+  }
+
+  80% {
+    visibility: visible;
+    height: 100vh;
+  }
+
+  100% {
+    visibility: visible;
+    height: 100vh;
+    color: white;
+  }
+}
+
+@keyframes slide-reverse {
+  0% {
+    visibility: visible;
+    height: 100vh;
+  }
+  80% {
+    visibility: hidden;
+    height: 0vh;
+  }
+  100% {
+    visibility: hidden;
+    height: 0vh;
+    color: transparent;
+  }
+}
+
+#dropdown.true {
+  animation: slide 0.5s forwards;
+}
+
+#dropdown.false {
+  animation: slide-reverse 0.5s forwards;
+}
+
+.navitem {
+  transition: all ease-in-out .15s;
+}
+
+.navitem:hover {
+  cursor: pointer;
+  border-color: #1ddcdc;
+  background-color: #1ddcdc80;
+  color: #1ddcdc;
+}
+
+.card {
+  transition: all ease-in-out .15s;
+}
+
+.card:hover {
+  cursor: pointer;
+  border-color: #1ddcdc;
+  background-color: #1ddcdc3b;
+  color:#1ddcdc;
+}
+
+.image {
+  display: block;
+  width: auto;
+  height: 100%;
+}
