@@ -14,18 +14,15 @@ export default function Navbar() {
 
     return (
         <>
-        <div className="flex flex-row bg-[#232323] h-[10%] p-5 lg:text-3xl md:text-2xl sm:text-xl overflow-hidden">
+        <div className="w-screen flex flex-row bg-[#232323] h-[10vh] p-5 lg:text-3xl md:text-2xl sm:text-xl overflow-hidden fixed shadow-lg z-[10]">
             <h1 className="basis-3/4 font-bold text-white pl-5 self-center">
-                Rishabh Vemparala
+                <a href="/">Rishabh Vemparala</a>
             </h1>
-            <div className="sm:flex flex-row basis-1/4 hidden self-center pr-5 gap-5">
-                <h1 className="basis-1/3 text-center font-bold text-white border-2 rounded p-2 navitem">
-                    <a href="#">about</a>
+            <div className="sm:flex flex-row basis-1/4 hidden self-center pr-5 gap-5 text-[#777777]">
+                <h1 className="basis-1/2 text-center font-bold border-2 border-[#777777] rounded p-2 navitem">
+                    <a href="/resume">resume</a>
                 </h1>
-                <h1 className="basis-1/3 text-center font-bold text-white border-2 rounded p-2 navitem">
-                    <a href="#">resume</a>
-                </h1>
-                <h1 className="basis-1/3 text-center font-bold text-white border-2 rounded p-2 navitem">
+                <h1 className="basis-1/2 text-center font-bold border-2 border-[#777777] rounded p-2 navitem">
                     <a href="#">contact</a>
                 </h1>
             </div>
@@ -34,14 +31,11 @@ export default function Navbar() {
             </div>
         </div>
         
-        <div className='flex flex-col sm:hidden md:hidden lg:hidden w-screen absolute bg-slate-800 pt-[5%] text-center self-center text-3xl false' id='dropdown'>
-            <h1 className="basis-1/3 text-center font-bold">
-                <a href="#about">about</a>
+        <div className='flex flex-col sm:hidden md:hidden lg:hidden w-screen absolute bg-[#232323] pt-[5%] text-center self-center text-3xl false mt-[10vh] z-10' id='dropdown'>
+            <h1 className="basis-1/2 text-center font-bold">
+                <a href="/resume">resume</a>
             </h1>
-            <h1 className="basis-1/3 text-center font-bold">
-                resume
-            </h1>
-            <h1 className="basis-1/3 text-center font-bold">
+            <h1 className="basis-1/2 text-center font-bold">
                 contact
             </h1>
         </div> 

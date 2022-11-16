@@ -15,7 +15,7 @@ body {
   color: transparent;
 }
 
-@keyframes slide {
+@keyframes slide-1 {
   0% {
     visibility: visible;
     height: 0vh;
@@ -34,7 +34,7 @@ body {
 }
 
 @keyframes slide-reverse {
-  0% {
+  0%,80% {
     visibility: visible;
     height: 100vh;
   }
@@ -50,7 +50,7 @@ body {
 }
 
 #dropdown.true {
-  animation: slide 0.5s forwards;
+  animation: slide-1 0.5s forwards;
 }
 
 #dropdown.false {
@@ -79,8 +79,97 @@ body {
   color:#1ddcdc;
 }
 
+.card .image {
+  transition: all ease-in-out .15s;
+  transform: scale(1.0);
+}
+
+.card:hover .image{
+  transition: all ease-in-out .15s;
+  transform: scale(1.05);
+  background-color: #ffffff80;
+}
+
+.card:hover::after {
+  transition: all ease-in-out .15s;
+  transform: scale(1.0);
+}
+
 .image {
   display: block;
   width: auto;
   height: 100%;
+}
+
+.typewriter {
+  display: inline-flex;
+}
+
+@media screen and (max-width: 768px){
+  .typewriter .typewriter-elements {
+    height: 1.75rem;
+    overflow: hidden;
+  }
+
+  @keyframes slide {
+    100% {
+      top: -5.25rem;
+    }
+  }
+}
+
+@media screen and (min-width: 768px){
+  .typewriter .typewriter-elements {
+    height: 1.875rem;
+    overflow: hidden;
+  }
+
+  @keyframes slide {
+    100% {
+      top: -6.75rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .typewriter .typewriter-elements {
+    height: 3rem;
+    overflow: hidden;
+  }
+  @keyframes slide {
+    100% {
+      top: -9rem;
+    }
+  }
+}
+
+.typewriter-elements li {
+  background-color: #444444;
+  top: 0;
+  position: relative;
+  animation: slide 9s steps(3) infinite;
+}
+
+.typewriter-elements li span {
+  position: relative;
+}
+
+.typewriter-elements li span::after{
+  background-color: #444444;
+  content: "";
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  overflow: hidden;
+  border-left: .15rem solid #1ddcdc;
+  animation: typing 3s steps(22) infinite;
+}
+
+@keyframes typing {
+  75%, 90% {
+    left: 100%;
+    margin: 0 100% 0 1%;
+  }
 }

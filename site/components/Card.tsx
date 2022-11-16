@@ -27,9 +27,9 @@ export default function Card(props: Props) {
         <div className={props.className}>
 
             {!state &&
-            <div className='flex flex-row bg-[#ffffffc0] rounded-lg border-2 card h-[100%]' id="front"onClick={handleClick}>
-                <div className='basis-1/2 justify-items-center'>
-                    <Image className="self-center image" src={props.data.img} alt=""/>
+            <div className='flex flex-row bg-[#ffffffc0] rounded-lg border-2 card h-[100%] w-[100%]' id="front"onClick={handleClick}>
+                <div className='basis-1/2 justify-items-center p-5'>
+                    <Image className="self-center image rounded-md shadow-lg" src={props.data.img} alt=""/>
                 </div>
                 <div className='basis-1/2 text-2xl self-center font-bold text-center'>
                     {props.data.company}
@@ -37,17 +37,17 @@ export default function Card(props: Props) {
             </div>}
 
             {state && 
-            <div className='flex flex-row bg-[#ffffffc0] rounded-lg border-2 card h-[100%]' id="back" onClick={handleClick}>
-                <div className='flex flex-col'>
+            <div className='flex flex-row bg-[#ffffffc0] rounded-lg border-2 card w-full h-[100%]' id="back" onClick={handleClick}>
+                <div className='flex flex-col w-[100%]'>
                     <div className='flex flex-row w-[100%] p-5'>
                         <div className='font-bold basis-1/2 text-left'>
                             {props.data.title}
                         </div>
-                        <div className='font-bold basis-1/2 text-right'>
+                        <div className='font-bold basis-1/2 w-[100%] text-right'>
                             {props.data.date}
                         </div>
                     </div>
-                    <ul className='p-5 space-y-5'>
+                    <ul className='p-5 space-y-5 w-[100%]'>
                         {props.data.desc.map((item) => 
                             <li>{item}</li>
                         )}                       

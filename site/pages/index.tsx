@@ -1,35 +1,41 @@
-import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
 
 import Navbar from '../components/Navbar'
 import Card from '../components/Card'
-import {exp1, exp2, proj1, proj2, proj3, proj4, proj5} from '../lib/exports'
+import pic from '../public/self-pic.jpg'
 
 export default function Home() {
 
   return (
-    <div className='w-screen h-screen bg-neutral-800 overflow-scroll'>
+    <div className='w-screen h-screen bg-[#444444] overflow-hidden scroll-smooth'>
       <Navbar />
-      <div className='pl-10 p-5 text-3xl font-bold text-white'>
-        Experience
+
+
+      
+      <div className='flex flex-col lg:flex-row w-screen mt-[15vh] lg:mt-[10vh] h-[100%] p-10 gap-10'>
+
+        {/* TypeWriter */}
+        <div className='font-bold self-center text-xl md:text-3xl lg:text-5xl lg:basis-3/4 z-0'>
+          <div className='typewriter'>
+            <div className='typewriter-prefix text-white'>I am a</div>
+            <ul className='typewriter-elements pl-3 text-[#09c7c7]'>
+                <li><span className='w-full h-[100%]'>Student at UT Dallas</span></li>
+                <li><span className='w-full h-[100%]'>Fullstack Developer</span></li>
+                <li><span className='w-full h-[100%]'>Car Enthusiast</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div className='lg:basis-1/4 flex flex-col self-center text-center gap-10 w-[100%]'>
+          <Image className="self-center rounded-full w-[50vw] h-[50vw] md:w-[20vw] md:h-[20vw]" src={pic} alt=""/>
+          <div className='font-bold text-3xl self-center text-white'>
+            Learn More About Me!
+          </div>
+          <a href="/resume" className='self-center button border-2 border-[#777777] text-lg w-[50%] lg:w-[75%] rounded-full text-[#efefef] bg-[#77777780] p-5 navitem'> Take Me There!</a>
+        </div>
+
       </div>
-      <div className='flex md:flex-row md:h-[50%] flex-col gap-5 p-10  w-screen'>
-        <Card className={'basis-1/2 h-[100%]'} data={exp1}/>
-        <Card className={'basis-1/2 h-[100%]'} data={exp2}/>
-      </div>
-      <div className='pl-10 p-5 text-3xl font-bold text-white'>
-        Projects
-      </div>
-      <div className='flex md:flex-row md:h-[55%] flex-col gap-5 p-10  w-screen'>
-        <Card className={'basis-1/2 h-[100%]'} data={proj1}/>
-        <Card className={'basis-1/2 h-[100%]'} data={proj2}/>
-      </div>
-      <div className='flex md:flex-row md:h-[55%] flex-col gap-5 p-10  w-screen'>
-        <Card className={'basis-1/4 h-[100%] p-5'} data={proj3}/>
-        <Card className={'basis-1/2 h-[100%] p-5'} data={proj4}/>
-        <Card className={'basis-1/4 h-[100%] p-5'} data={proj5}/>
-      </div>
+
     </div>
   )
 }

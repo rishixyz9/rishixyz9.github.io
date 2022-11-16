@@ -1,5 +1,29 @@
 import logo1 from '../public/sf-logo.png'
 import logo2 from '../public/acm.png'
+import logo3 from '../public/simplifarm.png'
+import logo4 from '../public/utdrooms.png'
+import logo5 from '../public/melanoma-detector.jpeg'
+import logo6 from '../public/riskify.png'
+import py from '../public/python.png'
+import c from '../public/c-logo.png'
+import java from '../public/java-logo.png'
+import js from '../public/js-logo.png'
+import html from '../public/html-logo.png'
+import css from '../public/css-logo.png'
+import yaml from '../public/yaml-logo.png'
+import svelte from '../public/svelte-logo.png'
+import discord from '../public/discord-logo.png'
+import flask from '../public/flask-logo.png'
+import react from '../public/react-logo.png'
+import node from '../public/node-icon.png'
+import django from '../public/django-logo.png'
+import opencv from '../public/OpenCV-logo.png'
+import tf from '../public/tensorflow-logo.png'
+import pipeline from '../public/pipeline-logo.png'
+import aws from '../public/aws-logo.png'
+import ps from '../public/postgresql-logo.png'
+import mongo from '../public/mongo-logo.png'
+import kb from '../public/kb-logo.png'
 
 export const exp1 = {
   company: "State Farm",
@@ -26,7 +50,7 @@ export const exp2 = {
 
 export const proj1 = {
   company: "SimpliFarm",
-  img: logo1,
+  img: logo3,
   date: "October 2022",
   title: "SimpliFarm",
   desc: [
@@ -39,7 +63,7 @@ export const proj1 = {
 
 export const proj2 = {
   company: "UTD Rooms",
-  img: logo1,
+  img: logo4,
   date: "September 2022",
   title: "UTD Rooms",
   desc: [
@@ -51,7 +75,7 @@ export const proj2 = {
 
 export const proj3 = {
   company: "Melanoma Detector",
-  img: logo1,
+  img: logo5,
   date: "November 2021",
   title: "Melanoma Detector",
   desc: [
@@ -61,13 +85,14 @@ export const proj3 = {
 }
 
 export const proj4 = {
-  company: "Mars Life Mobile App",
-  img: logo1,
-  date: "September 2021 -- November 2021",
-  title: "Mars Life Mobile App",
+  company: "Riskify",
+  img: logo6,
+  date: "November 2022",
+  title: "Riskify",
   desc: [
-    "Created a React-Native based mobile application to provide the latest information on Mars",
-    "Wrote api calls to NASA APIs to fetch and parse data about mars",
+    "Created an application to determine risk of a portfolio based on macroeconomic factors and market trends and return a rating between 0-100%",
+    "Used the Monte Carlo simulation to create an estimation of growth over an extended period of time",
+    "Designed and created an intuitive and user friendly UI with react.js and next.js for routing and SSR"
   ]  
 }
 
@@ -82,4 +107,97 @@ export const proj5 = {
   ]  
 }
 
-module.exports = {exp1, exp2, proj1, proj2, proj3, proj4, proj5}; 
+export const skills = [
+  [
+    {
+      skill: "Python",
+      img: py
+    },
+    {
+      skill: "C/C++",
+      img: c
+    },
+    {
+      skill: "Java",
+      img: java
+    },
+    {
+      skill: "JavaScript",
+      img: js
+    },
+  ],
+  [
+    {
+      skill: "HTML",
+      img: html
+    },
+    {
+      skill: "CSS",
+      img: css
+    },
+    {
+      skill: "YAML",
+      img: yaml
+    },
+    {
+      skill: "Svelte-Kit",
+      img: svelte
+    },
+  ],
+  [
+    {
+      skill: "Discord.py",
+      img: discord
+    },
+    {
+      skill: "Flask",
+      img: flask
+    },
+    {
+      skill: "React.JS",
+      img: react
+    },
+    {
+      skill: "Node.JS",
+      img: node
+    },
+  ],
+  [
+    {
+      skill: "Django",
+      img: django
+    },
+    {
+      skill: "OpenCV",
+      img: opencv
+    },
+    {
+      skill: "TensorFlow",
+      img: tf
+    },
+    {
+      skill: "GitOps CI/CD",
+      img: pipeline
+    },
+  ],
+  [
+    {
+      skill: "AWS",
+      img: aws
+    },
+    {
+      skill: "PostgreSQL",
+      img: ps
+    },
+    {
+      skill: "MongoDB",
+      img: mongo
+    },
+    {
+      skill: "Kubernetes",
+      img: kb
+    },
+  ]
+]
+
+module.exports = {exp1, exp2, proj1, proj2, proj3, proj4, proj5, skills}; 
