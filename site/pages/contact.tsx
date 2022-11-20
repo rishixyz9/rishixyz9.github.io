@@ -28,12 +28,12 @@ export default function Home() {
             </div>
             <div className='p-10 text-xl font-bold text-white flex flex-col lg:flex-row gap-6 lg:w-[100%] lg:self-center lg:-mt-16 float-left'>
                 <div className="flex flex-row self-center gap-5 justify-center">
-                    <a href="https://github.com/rishixyz9" target="_blank" rel="_noreferrer">
+                    <a href="https://github.com/rishixyz9" target="_blank" rel="noreferrer">
                         <Image className="self-center image rounded-md shadow-lg bg-[#ffffff80] p-2 rounded-lg" src={ghlogo} alt=""/>
                     </a>
                 </div>
                 <div className="flex flex-row self-center gap-5 justify-center"> 
-                    <a href="https://www.linkedin.com/in/rishabh-vemparala-8b6155205/" target="_blank" rel="_noreferrer">
+                    <a href="https://www.linkedin.com/in/rishabh-vemparala-8b6155205/" target="_blank" rel="noreferrer">
                         <Image className="self-center image rounded-md shadow-lg bg-[#ffffff80] p-2 rounded-lg" src={linkedin} alt=""/>
                     </a>
                 </div>
