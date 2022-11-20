@@ -24,14 +24,14 @@ export default function Resume() {
     }
 
   return (
-    <div className='w-screen h-screen bg-[#444444] overflow-scroll scroll-smooth'>
+    <div className='w-screen h-screen overflow-scroll scroll-smooth'>
       <Navbar />
 
       {/* Experience */}
-      <div className='mt-[10%] p-10 text-3xl font-bold text-white'>
+      <div className='mt-[10vh] p-10 text-3xl font-bold text-white'>
         Experience
       </div>
-      <div className='flex lg:flex-row lg:h-[55%] h-[auto] flex-col gap-5 p-10 w-screen'>
+      <div className='flex lg:flex-row h-[auto] flex-col gap-5 p-10 w-screen'>
         <Card className={'basis-1/2 w-[full]'} data={exp1}/>
         <Card className={'basis-1/2 w-[full]'} data={exp2}/>
       </div>
@@ -40,13 +40,13 @@ export default function Resume() {
       <div className='pl-10 p-5 text-3xl font-bold text-white'>
         Projects
       </div>
-      <div className='flex lg:flex-row lg:h-[55%] h-[auto] flex-col gap-5 p-10 w-screen'>
+      <div className='flex lg:flex-row h-[auto] flex-col gap-5 p-10 w-screen'>
         <Card className={'basis-1/2'} data={proj1}/>
         <Card className={'basis-1/2'} data={proj2}/>
       </div>
-      <div className='flex lg:flex-row lg:h-[55%] h-[auto] flex-col gap-5 p-10  w-screen'>
-        <Card className={'basis-1/3 h-[100%] p-5'} data={proj3}/>
-        <Card className={'basis-2/3 h-[100%] p-5'} data={proj4}/>
+      <div className='flex lg:flex-row h-[auto] flex-col gap-5 p-10  w-screen'>
+        <Card className={'basis-1/3 p-5'} data={proj3}/>
+        <Card className={'basis-2/3 p-5'} data={proj4}/>
       </div>
 
       {/* Skills */}
@@ -54,15 +54,15 @@ export default function Resume() {
         Skills
       </div>
       <div className='flex flex-row lg:h-[50%] h-[auto] gap-5 p-10  w-screen'>
-        <BsFillArrowLeftCircleFill className="self-center w-[10%] h-[10%] text-[#ffffffc0]" onClick={()=>handleClick("left")} />
+        <BsFillArrowLeftCircleFill className="self-center w-[10%] h-[10%] text-[#ffffffc0] hover:cursor-pointer hover:text-[#ffffff]" onClick={()=>handleClick("left")} />
         <div className='flex lg:flex-row h-[100%] flex-col gap-5 p-10  w-screen'>
-            {skills[view].map((skill) => {
+            {skills[view].map((skill, key) => {
                 return(
-                <Skill className={'basis-1/4'} data={skill}/>
+                <Skill key={key} className={'basis-1/4'} data={skill}/>
                 )
             })}
         </div>
-        <BsFillArrowRightCircleFill className="self-center w-[10%] h-[10%] text-[#ffffffc0]" onClick={()=>handleClick("right")} />
+        <BsFillArrowRightCircleFill className="self-center w-[10%] h-[10%] text-[#ffffffc0] hover:cursor-pointer hover:text-[#ffffff]" onClick={()=>handleClick("right")} />
       </div>
 
 

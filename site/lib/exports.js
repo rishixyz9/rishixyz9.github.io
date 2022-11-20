@@ -4,7 +4,7 @@ import logo3 from '../public/simplifarm.png'
 import logo4 from '../public/utdrooms.png'
 import logo5 from '../public/melanoma-detector.jpeg'
 import logo6 from '../public/riskify.png'
-import py from '../public/python.png'
+import py from '../public/python-logo.png'
 import c from '../public/c-logo.png'
 import java from '../public/java-logo.png'
 import js from '../public/js-logo.png'
@@ -58,7 +58,8 @@ export const proj1 = {
     "Designed and implemented an intuitive analytics dashboard for users to view fertility rating of a given location",
     "Featured google sign in to store records in Firebase and utilized Twilio API to send results directly to the client",
     "Winner of Twilio challenge at HackTX 2022",
-  ]
+  ],
+  link: "https://github.com/rishixyz9/SimpliFarm"
 }
 
 export const proj2 = {
@@ -70,7 +71,8 @@ export const proj2 = {
     "Worked on a web application to help students at my university find open rooms to study",
     "Used Beautifulsoup to scrape data and parse data from 30+ pages on the official course catalog",
     "Designed and implemented front-end with Svelte-kit and a REST API to calculate timings of classes and find open rooms at any given time of the day",
-  ]
+  ],
+  link: "https://github.com/rishixyz9/UTD-Rooms"
 }
 
 export const proj3 = {
@@ -81,7 +83,8 @@ export const proj3 = {
   desc: [
     "Trained a TensorFlow machine learning model with a dataset of melanoma and non-melanoma skin spots with 99% accuracy",
     "Used openCV to allow for users to take pictures and upload directly to the app for processing",
-  ]  
+  ],
+  link: "https://github.com/rishixyz9/Melanoma-Detector"  
 }
 
 export const proj4 = {
@@ -93,7 +96,8 @@ export const proj4 = {
     "Created an application to determine risk of a portfolio based on macroeconomic factors and market trends and return a rating between 0-100%",
     "Used the Monte Carlo simulation to create an estimation of growth over an extended period of time",
     "Designed and created an intuitive and user friendly UI with react.js and next.js for routing and SSR"
-  ]  
+  ], 
+  link: "https://github.com/rishixyz9/Riskify" 
 }
 
 export const proj5 = {

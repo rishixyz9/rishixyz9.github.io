@@ -7,7 +7,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  background-color: black;
+  background: linear-gradient(180deg, #444444 60%, #292929);
 }
 
 #dropdown {
@@ -144,7 +144,7 @@ body {
 }
 
 .typewriter-elements li {
-  background-color: #444444;
+  background-color: #44444400;
   top: 0;
   position: relative;
   animation: slide 9s steps(3) infinite;
@@ -172,4 +172,18 @@ body {
     left: 100%;
     margin: 0 100% 0 1%;
   }
+}
+
+.expandable {
+  overflow: hidden;
+  height: 100%;
+  transition: all .5s ease-in-out .2s;
+  width: 0;
+  color: transparent;
+}
+ 
+.expandable:target{
+  width: 100%;
+  height: 100%;
+  color:#1ddcdc;
 }

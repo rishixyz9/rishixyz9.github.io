@@ -24,11 +24,11 @@ export default function Card(props: Props) {
         <div className={props.className}>
 
             {!state &&
-            <div className='flex flex-row bg-[#ffffffc0] rounded-lg border-2 card h-[100%] w-[100%]'>
-                <div className='basis-1/2 justify-items-center p-5 h-1/2 self-center'>
+            <div className='flex flex-col bg-[#ffffffc0] rounded-lg border-2 card h-[100%] w-[100%]'>
+                <div className='basis-1/2 justify-items-center p-5 self-center'>
                     <Image className="self-center image rounded-md shadow-lg" src={props.data.img} alt=""/>
                 </div>
-                <div className='basis-1/2 text-2xl self-center w-[50%] font-bold text-center break-all p-5'>
+                <div className='basis-1/2 text-2xl self-center font-bold text-center break-all p-5'>
                     {props.data.skill}
                 </div>
             </div>}
