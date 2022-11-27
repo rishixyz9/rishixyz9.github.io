@@ -31,7 +31,7 @@ export default function Resume() {
       <div className='mt-[10vh] p-10 text-3xl font-bold text-white'>
         Experience
       </div>
-      <div className='flex lg:flex-row h-[auto] flex-col gap-5 p-10 w-screen'>
+      <div className='flex lg:flex-row lg:h-[55%] h-[auto] flex-col gap-5 p-10 w-screen'>
         <Card className={'basis-1/2 w-[full]'} data={exp1}/>
         <Card className={'basis-1/2 w-[full]'} data={exp2}/>
       </div>
@@ -40,11 +40,11 @@ export default function Resume() {
       <div className='pl-10 p-5 text-3xl font-bold text-white'>
         Projects
       </div>
-      <div className='flex lg:flex-row h-[auto] flex-col gap-5 p-10 w-screen'>
+      <div className='flex lg:flex-row lg:h-[55%] h-[auto] flex-col gap-5 p-10 w-screen'>
         <Card className={'basis-1/2'} data={proj1}/>
         <Card className={'basis-1/2'} data={proj2}/>
       </div>
-      <div className='flex lg:flex-row h-[auto] flex-col gap-5 p-10  w-screen'>
+      <div className='flex lg:flex-row lg:h-[55%] h-[auto] flex-col gap-5 p-10  w-screen'>
         <Card className={'basis-1/3 p-5'} data={proj3}/>
         <Card className={'basis-2/3 p-5'} data={proj4}/>
       </div>

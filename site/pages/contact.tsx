@@ -18,12 +18,19 @@ export default function Home() {
                 Contact Me
             </div>
             <div className='flex lg:flex-col flex-row'>
-            <div className="flex flex-col bg-[#ffffff80] w-[50%] m-10 h-[20vh] rounded gap-5 p-5 text-white text-3xl font-bold break-all">
+            <div className="flex flex-col bg-[#ffffff80] w-[50%] m-10 rounded gap-5 p-5 text-white sm:text-xl lg:text-3xl font-bold break-all">
                 <div>
-                    Call me at 469-971-6426
+                    Call me at 
+                    <div className='text-[#555555]'>
+                        469-971-6426
+                    </div>
                 </div>
+
                 <div>
-                    Email me at reach2rishabh@rocketmail.com
+                    <p>Email me at</p>
+                    <div>
+                        <span className='text-[#555555]'>reach2rishabh</span><span className='text-[#1ddcdc]'>@rocketmail.com</span>
+                    </div>
                 </div>
             </div>
             <div className='p-10 text-xl font-bold text-white flex flex-col lg:flex-row gap-6 lg:w-[100%] lg:self-center lg:-mt-16 float-left'>
