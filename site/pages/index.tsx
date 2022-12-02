@@ -32,7 +32,7 @@ export default function Home() {
           <div className='font-bold text-3xl self-center text-white'>
             Learn More About Me!
           </div>
-          <Link href="/resume" className='self-center button border-2 border-[#777777] text-lg w-[50%] lg:w-[75%] rounded-full text-[#efefef] bg-[#77777780] p-5 navitem'> Take Me There!</Link>
+          <Link href="/resume" className='self-center button border-2 border-[#777777] text-lg w-[75%] rounded-full text-[#efefef] bg-[#77777780] p-5 navitem'> Take Me There!</Link>
         </div>
 
       </div>
