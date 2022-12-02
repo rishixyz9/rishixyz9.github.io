@@ -6,7 +6,6 @@ import ghlogo from '../public/github-logo.png'
 import phone from '../public/phone-logo.png'
 import mail from '../public/mail-logo.png'
 import linkedin from '../public/linkedin-logo.png'
-import { useState } from 'react'
 
 export default function Home() {
 

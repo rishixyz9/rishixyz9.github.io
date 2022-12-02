@@ -95,12 +95,6 @@ body {
   transform: scale(1.0);
 }
 
-.image {
-  display: block;
-  width: auto;
-  height: 100%;
-}
-
 .typewriter {
   display: inline-flex;
 }

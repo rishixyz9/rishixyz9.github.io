@@ -30,10 +30,10 @@ export default function Card(props: Props) {
 
             {!state &&
             <div className='flex flex-row bg-[#ffffffc0] rounded-lg border-2 card h-[100%] w-[100%]' id="front"onClick={handleClick}>
-                <div className='basis-1/2 justify-items-center p-5'>
-                    <Image className="self-center image rounded-md shadow-lg" src={props.data.img} alt=""/>
+                <div className='basis-1/2 justify-items-center p-5 flex'>
+                    <Image className="self-center image rounded-md shadow-lg object-contain aspect-square h-[100%] p-5" src={props.data.img} alt=""/>
                 </div>
-                <div className='basis-1/2 text-2xl self-center font-bold text-center'>
+                <div className='basis-1/2 text-lg sm:text-2xl self-center font-bold text-center'>
                     {props.data.company}
                 </div>
             </div>}
