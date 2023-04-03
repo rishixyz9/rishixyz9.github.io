@@ -12,8 +12,8 @@ export default function Home() {
       <div className='w-screen h-screen flex'> 
 
         {/* name */}
-        <div className='flex flex-col font-bold text-white p-6 ml-48 mt-[75vh]'>
-          <div className='text-3xl'>
+        <div className='flex flex-col font-bold text-white p-6 ml-48 mt-[50vh]'>
+          <div className='text-5xl'>
             Rishabh Vemparala
           </div>
           <div className='font-light text-lg '>
@@ -22,10 +22,16 @@ export default function Home() {
           {/* links */}
           <div className='font-light text-md flex flex-row'>
             |
-            <Link name={'github'} link={'a'}/>|
+            <Link name={'github'} link={'https://github.com/rishixyz9'}/>|
             <Link name={'linkedIn'} link={'https://www.linkedin.com/in/rishabh-vemparala-8b6155205/'}/>|
             <Link name={'email'} link={'#'}/>|
           </div>
+        </div>
+
+        <div className='flex flex-col font-bold text-white p-6 ml-48 mt-[50vh]'>
+          <Link name={'projects'} link={'#'}/>
+          <Link name={'resume'} link={'#'}/>
+          <Link name={'about me'} link={'#'}/>
         </div>
 
       </div>
