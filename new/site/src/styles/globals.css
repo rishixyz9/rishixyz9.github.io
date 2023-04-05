@@ -6,4 +6,26 @@ html,
 body {
     background-color: black;
     margin: 0;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
 }
+
+div {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;    
+}
+
+::-webkit-scrollbar {
+    width: .25rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(131, 131, 131);
+    border-radius: 10px;
+}
+
+/* * {
+    margin: 0;
+    padding: 0;
+    outline: 1px solid #f00 !important;
+} */
