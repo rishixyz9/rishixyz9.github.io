@@ -17,7 +17,7 @@ export default function Card(props: Props) {
                 <div className='font-bold'>
                     {props.data.name}
                 </div>
-                <Image className="self-center justify-center h-full object-contain opacity-100 hover:scale-110 transition-transform hover:cursor-pointer" alt="" src={props.data.img} />
+                <Image className="rounded-md self-center justify-center h-full object-contain opacity-100 hover:scale-110 transition-transform hover:cursor-pointer" alt="" src={props.data.img} />
                 
             </div>
             <div className='p-6 basis-6/12 text-black font-semibold bg-gray-200 rounded-md border-white flex flex-col'>
