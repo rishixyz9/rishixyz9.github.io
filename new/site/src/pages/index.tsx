@@ -33,7 +33,7 @@ export default function Home() {
         </div>
 
         {/* Hero Section */}
-        <div className='flex sm:flex-row flex-col-reverse p-6 sm:mt-96 mt-auto m-lg:mb-6 sm:gap-0 gap-8'>
+        <div className='flex sm:flex-row flex-col-reverse p-6 mt-auto m-lg:mb-6 sm:gap-0 gap-8'>
           <div className='flex flex-col font-bold text-white self-center'>
             <div className='md:text-8xl text-5xl text-transparent bg-clip-text bg-gradient-to-r from-aqua to-h-purple'>
               Rishabh Vemparala
@@ -49,7 +49,7 @@ export default function Home() {
               <Link name={'email'} link={'#'}/>|
             </div>
           </div>
-          <Image alt="" src={s} className="rounded-full border-2 border-white ml-auto sm:mr-0 mr-auto sm:w-96 overflow-hidden object-center object-contain"/>
+          <Image alt="" src={s} className="flex rounded-full border-2 border-white ml-auto sm:mr-0 mr-auto sm:w-96 w-80 max-h-96 overflow-hidden object-center object-contain"/>
         </div>
       </div> 
       <Projects /> 
