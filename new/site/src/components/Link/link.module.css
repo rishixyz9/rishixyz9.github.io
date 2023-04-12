@@ -1,6 +1,6 @@
 .link::before {
     content: "?";
-    background-color: rgb(0, 208, 255);
+    background-color: #00f9f9;
     position: absolute;
     top: 0;
     bottom: 0;
