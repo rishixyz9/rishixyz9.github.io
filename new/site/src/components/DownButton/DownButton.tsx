@@ -8,7 +8,7 @@ interface Props {
 export default function DownButton(props: Props) {
 
     return (
-        <div className='flex items-center justify-center mt-auto'>
+        <div className='sm:flex items-center justify-center mt-auto hidden'>
             <a href={`#${props.next}`}>
                 <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" >
                     <path d="M 25 25 L 0 0" stroke="rgb(0, 208, 255)" id={styles.left}/>

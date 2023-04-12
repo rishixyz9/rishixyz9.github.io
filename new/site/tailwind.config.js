@@ -7,7 +7,15 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'aqua': '#00f9f9',
+        'h-purple': '#ff1efe'
+      },
+      screens: {
+        'm-lg': {'max': '1024px'}
+      }
+    }
   },
   plugins: [],
 }
