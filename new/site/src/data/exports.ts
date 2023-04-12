@@ -52,7 +52,7 @@ export const p2: CardObject = {
     name: 'R I S K I F Y',
     img: riskify,
     desc: [
-        "Created an application to analyze the risk of a portfolio to help people from all backgrounds take control of their finances",
+        "Application to analyze the risk of a portfolio to help people take control of their finances",
         "Designed an intuitive UI using React.JS, Next.JS, and Tailwind"
     ],
     link: "https://github.com/rishixyz9/Riskify"
@@ -62,9 +62,8 @@ export const p3: CardObject = {
     name: 'UTD ROOMS',
     img: utdrooms,
     desc: [
-        "Worked on a web application to help students at my university find open rooms to study",
-        "Used Beautifulsoup to scrape data and parse data from 30+ pages on the official course catalog",
-        "Designed and implemented front-end with Svelte-kit and a REST API to calculate timings of classes and find open rooms at any given time of the day"
+        "App to help students at the university of texas at dallas to find open rooms to study",
+        "Designed and implemented front-end with Svelte-kit and a REST API"
     ],
     link: "https://github.com/rishixyz9/UTD-Rooms"
 }
@@ -73,8 +72,8 @@ export const p4: CardObject = {
     name: 'Melanoma Detector',
     img: meldetector,
     desc: [
-        "Trained a TensorFlow machine learning model with a dataset of melanoma and non-melanoma skin spots with 99% accuracy",
-        "Used openCV to allow for users to take pictures and upload directly to the app for processin",
+        "Website to allow users to check if a skin spot is melanoma with 99% accuracy",
+        "Built with Django, TensorFlow, and OpenCV",
     ],
     link: "https://github.com/rishixyz9/Melanoma-Detector"
 }

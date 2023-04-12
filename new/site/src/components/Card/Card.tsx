@@ -12,7 +12,7 @@ interface Props {
 export default function Card(props: Props) {
 
     return (
-        <div className='w-80 flex h-80 text-black bg-slate-800 rounded-md flex-col self-center ml-auto mr-auto snap-center'>
+        <div className='max-w-80 flex h-80 text-black bg-slate-800 rounded-md flex-col self-center ml-auto mr-auto snap-center'>
             <Image 
                 className="h-40 overflow-hidden flex rounded-t-md self-center justify-center object-contain object-center hover:cursor-pointer" 
                 alt="" src={props.data.img} 
