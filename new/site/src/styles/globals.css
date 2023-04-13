@@ -4,19 +4,36 @@
 
 html,
 body {
-    background-color: black;
+    font-family: 'Outfit', sans-serif;
+    background: #0B0E17;
     margin: 0;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
 }
 
+.hero-bg {
+    background: #0B0E17;
+    background-image: radial-gradient(#00F9F9 1px, transparent 0);
+    background-size: 64px 64px;
+}
+
 ::-webkit-scrollbar {
     width: .25rem;
+    height: .25rem;
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: rgb(131, 131, 131);
     border-radius: 10px;
+}
+
+.border-text {
+    writing-mode: vertical-rl
+}
+
+.card {
+    width: clamp(24rem, 40rem);
+    height: clamp(24rem, 40rem);
 }
 
 /* * {

@@ -10,10 +10,14 @@ module.exports = {
     extend: {
       colors: {
         'aqua': '#00f9f9',
-        'h-purple': '#ff1efe'
+        'h-purple': '#ff1efe',
+        'bg-main': '#0B0E17',
+        'bg-secondary': '#2E1760',
+        'misc': '#3423A6',
       },
       screens: {
-        'm-lg': {'max': '1024px'}
+        'm-lg': {'max': '1024px'},
+        'm-xs': {'max': '639px'}
       }
     }
   },

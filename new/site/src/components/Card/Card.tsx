@@ -12,12 +12,12 @@ interface Props {
 export default function Card(props: Props) {
 
     return (
-        <div className='max-w-80 flex h-80 text-black bg-slate-800 rounded-md flex-col self-center ml-auto mr-auto snap-center'>
+        <div className='flex-none w-96 h-96 text-black bg-slate-800 rounded-md  self-center  snap-center'>
             <Image 
-                className="h-40 overflow-hidden flex rounded-t-md self-center justify-center object-contain object-center hover:cursor-pointer" 
+                className="w-96 h-48 flex rounded-t-md self-center justify-center object-contain hover:cursor-pointer" 
                 alt="" src={props.data.img} 
             />
-            <div className='p-2 h-40 text-black text-sm font-light bg-gray-200 rounded-b-md border-white flex flex-col overflow-y-scroll'>
+            <div className='p-2 h-48 text-black text-sm font-light bg-gray-200 rounded-b-md border-white flex flex-col overflow-y-scroll'>
                 <div className='font-bold text-lg'>{props.data.name}</div>
                 {props.data.desc.map((item, key) => 
                     <div className='mt-auto' key={key}>{item}</div>
