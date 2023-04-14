@@ -1,0 +1,14 @@
+#left, #right {
+    stroke-dasharray: 35.3553390593;
+    stroke-dashoffset: 35.3553390593;
+    animation: stroke 4s infinite;
+}
+
+@keyframes stroke {
+    25%,75% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dashoffset: 35.3553390593;
+    }
+}

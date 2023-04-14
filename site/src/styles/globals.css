@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+    font-family: 'Outfit', sans-serif;
+    background: #0B0E17;
+    margin: 0;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+.hero-bg {
+    background: #0B0E17;
+    background-image: radial-gradient(#00F9F9 1px, transparent 0);
+    background-size: 64px 64px;
+}
+
+::-webkit-scrollbar {
+    width: .25rem;
+    height: .25rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(131, 131, 131);
+    border-radius: 10px;
+}
+
+.border-text {
+    writing-mode: vertical-rl
+}
+
+.card {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.abt {
+    background-image: url('../../public/self-pic.jpg');
+    background-position-y: center;
+    background-size: cover;
+    object-fit: contain;
+    object-position: center;
+}
+
+/* * {
+    margin: 0;
+    padding: 0;
+    outline: 1px solid #f00 !important;
+} */
