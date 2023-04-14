@@ -24,6 +24,7 @@ import aws from '../../public/logos/aws-logo.png'
 import ps from '../../public/logos/postgresql-logo.png'
 import mongo from '../../public/logos/mongo-logo.png'
 import kb from '../../public/logos/kb-logo.png'
+import aa from '../../public/aassistant.jpg'
 
 
 import { StaticImageData } from 'next/image'
@@ -76,6 +77,16 @@ export const p4: CardObject = {
         "Built with Django, TensorFlow, and OpenCV",
     ],
     link: "https://github.com/rishixyz9/Melanoma-Detector"
+}
+
+export const p5: CardObject = {
+    name: 'AAssisstant',
+    img: aa,
+    desc: [
+        "Mobile application created to help airline flyers plan their flights effectively",
+        "Built with React Native, Android Studio, and Recoil.JS",
+    ],
+    link: "https://github.com/raghavpillai/AAssistant"
 }
 
 export const e1: CardObject = {
@@ -136,4 +147,4 @@ export const skills = {
     ]
 }
 
-module.exports = {p1, p2, p3, p4, e1, e2, skills};
+module.exports = {p1, p2, p3, p4, p5, e1, e2, skills};
