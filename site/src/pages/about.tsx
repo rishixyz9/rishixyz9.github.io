@@ -9,10 +9,6 @@ import { useState, useRef } from 'react'
 export default function About() {
 
     const bgparallax = useRef<any>(null)
-    const scrollref = useRef<any>(null)
-    const [scrolling, setScrolling] = useState(false)
-    const [scrollx, setScrollx] = useState(0)
-    const [clientx, setClientx] = useState(0)
 
     const handleMove = (e: any) => {
         if(bgparallax.current === null){return}
