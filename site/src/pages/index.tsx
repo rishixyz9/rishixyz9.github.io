@@ -12,6 +12,7 @@ import Script from 'next/script'
 
 import linkedin from '../../public/linkedin-logo.svg'
 import gh from '../../public/github-logo.svg'
+import Contact from './contact'
 
 export default function Home() {
 
@@ -63,9 +64,9 @@ export default function Home() {
 
               {/* menu */}
               <div className='ml-auto lg:mr-60 mr-6 font-light lg:text-5xl md:text-4xl sm:flex flex-col hidden gap-1 self-center'>
-                  <Link name={'Projects'} link={'#projects'}/>
-                  <Link name={'Resume'} link={'#'}/>
-                  <Link name={'Contact'} link={'#'}/>
+                  <Link button={false} name={'Projects'} link={'#projects'}/>
+                  <Link button={false} name={'Resume'} link={'#resume'}/>
+                  <Link button={false} name={'Contact'} link={'#'}/>
               </div>
             </div>
 
@@ -93,6 +94,8 @@ export default function Home() {
       </div> 
       <About />
       <Projects /> 
+      <Resume />
+      <Contact />
     </>
   )
 }

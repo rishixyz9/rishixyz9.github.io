@@ -12,19 +12,19 @@ interface Props {
 export default function Card(props: Props) {
 
     return (
-        <div className='flex-none w-72 h-72 sm:w-96 sm:h-96 2xl:w-[48rem] 2xl:h-[48rem] text-black bg-slate-800 rounded-md self-center snap-center card'>
+        <div className='flex-none w-[calc(10rem+2vw)] h-[calc(10rem+2vw)] sm:w-96 sm:h-96 2xl:w-[48rem] 2xl:h-[48rem] text-black bg-slate-800 rounded-md self-center snap-center card'>
             <Image 
-                className="w-72 h-36 sm:w-96 sm:h-48 2xl:w-[96rem] 2xl:h-[24rem] flex rounded-t-md self-center justify-center object-contain hover:cursor-pointer" 
+                className="w-64 h-[calc((10rem+2vw)/2)] sm:w-96 sm:h-48 2xl:w-[96rem] 2xl:h-[24rem] flex rounded-t-md self-center justify-center object-contain hover:cursor-pointer" 
                 alt="" src={props.data.img} draggable="false" 
             />
-            <div className='p-2 h-36 sm:h-48 2xl:h-[24rem] text-black text-sm 2xl:text-xl font-light bg-gray-200 rounded-b-md border-white flex flex-col overflow-y-scroll'>
+            <div className='p-2 h-[calc((10rem+2vw)/2)] sm:h-48 2xl:h-[24rem] text-black text-sm 2xl:text-xl font-light bg-gray-200 rounded-b-md border-white flex flex-col overflow-y-scroll'>
                 <div className='font-bold text-lg 2xl:text-3xl'>{props.data.name}</div>
                 {props.data.desc.map((item, key) => 
                     <div className='mt-auto' key={key}>{item}</div>
                 )} 
                 {props.data.link && 
                 <div className='w-fit bg-black mt-auto rounded'>
-                    <Link name={'visit repo'} link={props.data.link}/>
+                    <Link button={false} name={'visit repo'} link={props.data.link}/>
                 </div>}
                 
             </div>
