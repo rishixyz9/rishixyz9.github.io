@@ -3,7 +3,7 @@ import Link from '@/components/Link/Link'
 import MenuLink from '@/components/Link/MenuLink'
 import DownButton from '@/components/DownButton/DownButton'
 import Card from '@/components/Card/Card'
-import {p1, p2, p3, p4} from '../data/exports'
+import {p1, p2, p3, p4, p5} from '../data/exports'
 import { useState, useRef } from 'react'
 
 export default function Projects() {
@@ -27,45 +27,42 @@ export default function Projects() {
         bgparallax.current.style.backgroundPosition = x;
     }
 
-    const onMouseDown = (e) => {
+    const onMouseDown = (e:any) => {
         setClientx(e.clientX);
-        console.log(clientx)
         setScrolling(true);
-      };
+    };
     
-    const onMouseUp = () => {
+    const onMouseUp = (e:any) => {
         setScrolling(false)
-      };
-    
-    const onMouseMove = (e)=> {
+    };
+
+    const onMouseMove = (e:any)=> {
         if (scrolling) {
-            console.log(scrollref)
-          scrollref.current.scrollLeft = scrollx + e.clientX - clientx;
-          setScrollx(scrollx + e.clientX - clientx);
-          setClientx(e.clientX);
-          console.log(clientx, scrollx)
+            const dx =   -1 * (e.clientX - clientx)
+            scrollref.current.scrollLeft = scrollref.current.clientWidth*dx + scrollx
+            setScrollx(scrollref.current.scrollLeft);
+            setClientx(e.clientX);
+            console.log(clientx, e.clientX, dx, scrollx)
         }
-      };
+    };
 
   return (
     <div className='flex flex-col w-full h-screen text-white snap-center bg-bg-main hero-bg' id="projects" onMouseMove={(e) => handleMove(e)} ref={bgparallax}>
         <div className='flex flex-col lg:flex-row p-6 pr-0 self-center w-[calc(100vw-4rem)] h-full m-16 rounded'>
             <div className='flex flex-col p-6 xl:ml-48 self-center'>
-                <div className='font-bold sm:text-9xl text-6xl m-0'>
+                <div className='lg:text-9xl sm:text-8xl text-5xl'>
                     Projects
                 </div>
-                <div className='font-light text-lg '>
+                <div className='text-[#A8A8A8] font-light text-sm sm:text-lg'>
                 Cool things I built
                 </div>
             </div>
-            <div className='lg:ml-auto self-center flex flex-row overflow-x-auto flex-nowrap w-96 snap-mandatory snap-x scroll-smooth p-2 gap-12 lg:mr-60 mr-6 z-10' onMouseDown={(e) => onMouseDown(e)} onMouseMove={(e) => onMouseMove(e)} onMouseUp={onMouseUp} ref={scrollref}>
-                {/* <div className='h-full grid 2xl:grid-cols-1 overflow-y-auto gap-y-6 lg:mr-6 m-6 snap-mandatory snap-y scroll-smooth'> */}
-                    <Card data={p1}/>
-                    <Card data={p2}/>
-                    <Card data={p3}/>
-                    <Card data={p4}/>
-                {/* </div> */}
-
+            <div className='mt-auto mb-auto lg:mb-0 lg:mt-0 lg:ml-auto self-center flex flex-row overflow-x-auto snap-x snap-mandatory scroll-smooth flex-nowrap w-72 sm:w-96 2xl:w-[48rem] pb-2 gap-12 mr-6 cursor-grab' onMouseDown={(e) => onMouseDown(e)} onMouseMove={(e) => onMouseMove(e)} onMouseUp={(e) => onMouseUp(e)} onMouseLeave={(e) => onMouseUp(e)} ref={scrollref}>
+                <Card data={p1}/>
+                <Card data={p2}/>
+                <Card data={p3}/>
+                <Card data={p4}/>
+                <Card data={p5}/>
             </div>
         </div> 
     </div>

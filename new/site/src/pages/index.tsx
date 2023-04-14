@@ -5,6 +5,7 @@ import { useRef } from 'react'
 
 import Link from '@/components/Link/Link'
 import Projects from './projects'
+import About from './about'
 import Resume from './resume'
 import Skills from './skills'
 import Script from 'next/script'
@@ -62,7 +63,7 @@ export default function Home() {
 
               {/* menu */}
               <div className='ml-auto lg:mr-60 mr-6 font-light lg:text-5xl md:text-4xl sm:flex flex-col hidden gap-1 self-center'>
-                  <Link name={'Projects'} link={'#'}/>
+                  <Link name={'Projects'} link={'#projects'}/>
                   <Link name={'Resume'} link={'#'}/>
                   <Link name={'Contact'} link={'#'}/>
               </div>
@@ -90,6 +91,7 @@ export default function Home() {
 
         
       </div> 
+      <About />
       <Projects /> 
     </>
   )
