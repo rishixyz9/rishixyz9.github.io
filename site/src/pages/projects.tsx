@@ -53,10 +53,10 @@ export default function Projects() {
                     Projects
                 </div>
                 <div className='text-[#A8A8A8] font-light text-sm sm:text-lg'>
-                Cool things I built
+                    Cool things I built
                 </div>
             </div>
-            <div className='mt-auto mb-auto lg:mb-0 lg:mt-0 lg:ml-auto self-center flex flex-row overflow-x-auto snap-x snap-mandatory scroll-smooth flex-nowrap w-64 sm:w-96 2xl:w-[48rem] pb-2 gap-12 sm:mr-6 cursor-grab m-lg:mb-auto' 
+            <div className='mt-auto mb-auto lg:mb-0 lg:mt-0 lg:ml-auto self-center flex flex-row overflow-x-scroll snap-x snap-mandatory scroll-smooth flex-nowrap max-w-[12rem] md:max-w-xs lg:max-w-sm h-[50vh] gap-12 overflow-y-hidden lg:mr-6 cursor-grab m-lg:mb-auto' 
                 onMouseDown={(e) => onMouseDown(e)} onMouseMove={(e) => onMouseMove(e)} onMouseUp={(e) => onMouseUp(e)} onMouseLeave={(e) => onMouseUp(e)} ref={scrollref}>
                 <Card data={p1}/>
                 <Card data={p2}/>

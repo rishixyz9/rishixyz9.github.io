@@ -46,6 +46,10 @@ body {
     object-position: center;
 }
 
+.abt-text {
+    font-size: clamp(12px,calc(2vw+2vh),30px);
+}
+
 /* * {
     margin: 0;
     padding: 0;

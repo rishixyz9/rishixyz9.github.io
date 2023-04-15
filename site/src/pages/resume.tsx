@@ -44,7 +44,8 @@ export default function Resume() {
   return (
     <div className='flex flex-col w-full h-screen text-white snap-center bg-bg-main hero-bg' id="resume" onMouseMove={(e) => handleMove(e)} ref={bgparallax}>
         <div className='flex flex-col-reverse lg:flex-row sm:p-6 pr-0 self-center w-[calc(100vw-4rem)] h-full m-16 rounded border-aqua border'>
-            <div className='xl:ml-48 mt-auto mb-auto lg:mb-0 lg:mt-0 lg:ml-auto self-center flex flex-row overflow-x-auto snap-x snap-mandatory scroll-smooth flex-nowrap w-72 sm:w-96 2xl:w-[48rem] pb-2 gap-12 sm:mr-6 cursor-grab' onMouseDown={(e) => onMouseDown(e)} onMouseMove={(e) => onMouseMove(e)} onMouseUp={(e) => onMouseUp(e)} onMouseLeave={(e) => onMouseUp(e)} ref={scrollref}>
+            <div className='mt-auto mb-auto lg:mb-0 lg:mt-0 lg:ml-auto self-center flex flex-row overflow-x-scroll snap-x snap-mandatory scroll-smooth flex-nowrap max-w-[12rem] md:max-w-xs lg:max-w-sm h-[50vh] gap-12 overflow-y-hidden lg:mr-6 cursor-grab m-lg:mb-auto' 
+                onMouseDown={(e) => onMouseDown(e)} onMouseMove={(e) => onMouseMove(e)} onMouseUp={(e) => onMouseUp(e)} onMouseLeave={(e) => onMouseUp(e)} ref={scrollref}>
                 <Card data={e1}/>
                 <Card data={e2}/>
             </div>
