@@ -32,7 +32,7 @@ export default function Contact() {
     }
 
   return (
-    <div className='flex flex-col w-full h-screen text-white snap-center bg-bg-main hero-bg' id="projects" onMouseMove={(e) => handleMove(e)} ref={bgparallax}>
+    <div className='flex flex-col w-full h-screen text-white snap-center bg-bg-main hero-bg' id="contact" onMouseMove={(e) => handleMove(e)} ref={bgparallax}>
         <div className='flex flex-col lg:flex-row sm:p-6 pr-0 self-center w-[calc(100vw-4rem)] h-full m-16 rounded  border-aqua border'>
             <div className='flex flex-col p-6 xl:ml-48 self-center m-lg:mt-auto'>
                 <div className='lg:text-9xl sm:text-8xl text-5xl'>
