@@ -14,7 +14,7 @@ export default function Card(props: Props) {
     return (
         <div className='flex-none w-full h-full text-black bg-slate-800 rounded-md self-center snap-center card'>
             <Image 
-                className="flex w-full h-[50%] self-center justify-center object-cover hover:cursor-pointer rounded-t-md object-center" 
+                className="flex w-full h-[50%] self-center justify-center object-cover hover:cursor-pointer rounded-t-md object-center sm:object-left" 
                 alt="" src={props.data.img} draggable="false" 
             />
             <div className='p-2 h-[50%] text-black text-xs sm:text-sm 2xl:text-xl font-light bg-gray-200 rounded-b-md border-white flex flex-col overflow-y-scroll'>
