@@ -26,15 +26,15 @@ export default function About() {
   return (
     <div className='relative flex flex-col w-full h-screen max-h-screen text-white snap-center bg-bg-main hero-bg' id="about" onMouseMove={(e) => handleMove(e)} ref={bgparallax}>
         <div className='flex flex-col lg:flex-row p-6 self-center w-[calc(100vw-4rem)] h-full m-16 rounded border-aqua border relative'>
-            <div className='flex flex-col p-6 ml-auto mr-auto self-center m-xs:mt-auto m-xs:mb-auto z-10 relative overflow-hidden'>
+            <div className='flex flex-col p-6 ml-auto mr-auto self-center m-xs:mt-auto m-xs:mb-auto z-10 relative overflow-hidden h-full'>
                 <div className='lg:text-9xl sm:text-8xl text-5xl'>
                     Hi! 👋
                 </div>
-                <div className='text-[#A8A8A8] font-light text-sm sm:text-3xl inline-block'>
+                <div className='text-[#A8A8A8] font-light abt-text  inline-block'>
                     My name is Rishabh Vemparala and I am a Software Engineering intern at StateFarm and study <span className='text-aqua'>Computer Science</span> at the University of Texas at Dallas. 
-                    <br className='m-xs:hidden'></br>
+                    <br className='hidden sm:display'></br>
                     Most of my experience is in fullstack web development, but I am always looking for cool new technologies to try out. 
-                    <br className='m-xs:hidden'></br>
+                    <br className='hidden sm:display'></br>
                     I enjoy spotting cool cars out in the wild and currently drive a 2003 Acura RSX <span className='italic'>TYPE<span className='text-[#f60203]'>-S</span></span>
                 </div>
             </div>
