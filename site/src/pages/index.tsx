@@ -66,7 +66,7 @@ export default function Home() {
               <div className='ml-auto lg:mr-60 mr-6 font-light lg:text-5xl md:text-4xl sm:flex flex-col hidden gap-1 self-center'>
                   <Link button={false} name={'Projects'} link={'#projects'}/>
                   <Link button={false} name={'Resume'} link={'#resume'}/>
-                  <Link button={false} name={'Contact'} link={'#'}/>
+                  <Link button={false} name={'Contact'} link={'#contact'}/>
               </div>
             </div>
 
