@@ -8,23 +8,8 @@ import { useState, useRef } from 'react'
 
 export default function About() {
 
-    const bgparallax = useRef<any>(null)
-
-    const handleMove = (e: any) => {
-        if(bgparallax.current === null){return}
-        let _w = window.innerWidth/5;
-        let _h = window.innerHeight/5;
-        let _mouseX = e.clientX;
-        let _mouseY = e.clientY;
-        let _depth1 = `${10 - (_mouseX - _w) * 0.01}% ${10 - (_mouseY - _h) * 0.01}%`;
-        let _depth2 = `${10 - (_mouseX - _w) * 0.02}% ${10 - (_mouseY - _h) * 0.02}%`;
-        let _depth3 = `${10 - (_mouseX - _w) * 0.03}% ${10 - (_mouseY - _h) * 0.03}%`;
-        let x = `${_depth3}, ${_depth2}, ${_depth1}`;
-        bgparallax.current.style.backgroundPosition = x;
-    }
-
   return (
-    <div className='relative flex flex-col w-full h-screen max-h-screen text-white snap-center bg-bg-main hero-bg' id="about" onMouseMove={(e) => handleMove(e)} ref={bgparallax}>
+    <div className='relative flex flex-col w-full h-screen max-h-screen text-white snap-center' id="about">
         <div className='flex flex-col lg:flex-row p-6 self-center w-[calc(100vw-4rem)] h-full m-16 rounded border-aqua border relative'>
             <div className='flex flex-col p-6 ml-auto mr-auto self-center m-xs:mt-auto m-xs:mb-auto z-10 relative overflow-hidden h-full'>
                 <div className='lg:text-9xl sm:text-8xl text-5xl'>
