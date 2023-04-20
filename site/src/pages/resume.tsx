@@ -36,7 +36,7 @@ export default function Resume() {
   return (
     <div className='flex flex-col w-full h-screen text-white snap-center' id="resume">
         <div className='flex flex-col-reverse lg:flex-row sm:p-6 pr-0 self-center w-[calc(100vw-4rem)] h-full m-16 rounded border-aqua border'>
-            <div className='mt-auto mb-auto lg:mb-0 lg:mt-0 lg:ml-auto self-center flex flex-row overflow-x-scroll snap-x snap-mandatory scroll-smooth flex-nowrap max-w-[12rem] md:max-w-xs lg:max-w-sm h-[50vh] gap-12 overflow-y-hidden lg:mr-6 cursor-grab m-lg:mb-auto' 
+            <div className='mt-auto mb-auto lg:mb-0 lg:mt-0 lg:ml-48 self-center flex flex-row overflow-x-scroll snap-x snap-mandatory scroll-smooth flex-nowrap max-w-[12rem] md:max-w-xs lg:max-w-sm xl:max-w-md 2xl:max-w-lg h-[50vh] gap-12 overflow-y-hidden lg:mr-6 cursor-grab m-lg:mb-auto'
                 onMouseDown={(e) => onMouseDown(e)} onMouseMove={(e) => onMouseMove(e)} onMouseUp={(e) => onMouseUp(e)} onMouseLeave={(e) => onMouseUp(e)} ref={scrollref}>
                 <Card data={e1}/>
                 <Card data={e2}/>
