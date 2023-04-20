@@ -54,10 +54,10 @@ export default function Home() {
 
               {/* name */}
               <div className='flex flex-col font-bold text-white self-center ml-6 mb-6 m-xs:pr-6 '>
-                <div className='lg:text-9xl md:text-8xl sm:text-5xl m-xs:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-aqua to-h-purple'>
+                <div className='2xl:text-[14rem] lg:text-9xl md:text-8xl sm:text-5xl m-xs:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-aqua to-h-purple'>
                   Rishabh Vemparala
                 </div>
-                <div className='text-[#A8A8A8] font-light text-sm sm:text-lg '>
+                <div className='text-[#A8A8A8] font-light 2xl:text-xl text-sm sm:text-lg '>
                   Software Engineer and student at the University of Texas at Dallas
                 </div>
               </div>
