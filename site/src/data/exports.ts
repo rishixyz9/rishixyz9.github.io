@@ -83,8 +83,9 @@ export const p5: CardObject = {
     name: 'AAssisstant',
     img: aa,
     desc: [
-        "Mobile application created to help airline flyers plan their flights effectively",
+        "Mobile application created to help airline flyers plan their flights effectively by utilizing geographic data and travel patterns",
         "Built with React Native, Android Studio, and Recoil.JS",
+        "Winner of the Best UI challenge at HackTAMU 2023"
     ],
     link: "https://github.com/raghavpillai/AAssistant"
 }
