@@ -17,9 +17,9 @@ export default function About() {
                 </div>
                 <div className='text-[#A8A8A8] font-light abt-text  inline-block mb-auto'>
                     My name is Rishabh Vemparala and I am a Software Engineering intern at StateFarm and study <span className='text-aqua'>Computer Science</span> at the University of Texas at Dallas. 
-                    <br className='hidden sm:display'></br>
+                    <br></br>
                     Most of my experience is in fullstack web development, but I am always looking for cool new technologies to try out. 
-                    <br className='hidden sm:display'></br>
+                    <br></br>
                     I enjoy spotting cool cars out in the wild and currently drive a 2003 Acura RSX <span className='italic'>TYPE<span className='text-[#f60203]'>-S</span></span>
                 </div>
             </div>

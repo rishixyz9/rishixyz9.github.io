@@ -12,23 +12,27 @@ interface Props {
 export default function Card(props: Props) {
 
     return (
-        <div className='flex-none w-full h-full text-black bg-slate-800 rounded-md self-center snap-center card'>
-            <Image 
-                className="flex w-full h-[50%] self-center justify-center object-cover hover:cursor-pointer rounded-t-md object-center" 
-                alt="" src={props.data.img} draggable="false" 
-            />
-            <div className='p-2 h-[50%] text-black text-xs sm:text-sm 2xl:text-xl font-light bg-gray-200 rounded-b-md border-white flex flex-col overflow-y-scroll'>
-                <div className='m-xs:mt-auto font-bold text-lg 2xl:text-3xl'>{props.data.name}</div>
+    <div className='h-full relative'>
+        <Image 
+            className="z-0 top-0 h-full w-full self-center justify-center object-cover rounded-md absolute bg-slate-400" 
+            alt="" src={props.data.img} draggable="false" 
+        />
+        <div className='m-xs:hidden flex flex-col absolute top-0 h-full w-full opacity-0 bg-black/75 backdrop-blur-[7.5px] hover:opacity-100 transition-all ease-in-out p-6 text-aqua'>
+            <div className='md:text-2xl lg:text-4xl text-center mt-auto font-bold'>{props.data.name}</div>
+            <div className='text-sm lg:text-lg mb-auto font-medium'>
                 {props.data.desc.map((item, key) => 
                     <div className='mt-auto m-xs:hidden' key={key}>{item}</div>
                 )} 
-                {props.data.link && 
-                <div className='w-fit bg-black m-xs:mt-0 sm:mt-auto rounded'>
-                    <Link button={false} name={'visit repo'} link={props.data.link}/>
-                </div>}
-                
             </div>
+            {props.data.link && 
+            <div className='w-fit bg-black m-xs:mt-0 sm:mt-auto rounded'>
+                <Link button={false} name={'visit repo'} link={props.data.link}/>
+            </div>}
         </div>
+        <a className='m-xs:flex hidden top-0 h-full w-full absolute z-10' href={props.data.link} target="_blank" rel="noreferrer"></a>
+    </div>
+
+
 
     )
 }

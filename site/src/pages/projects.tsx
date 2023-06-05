@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import Link from '@/components/Link/Link'
 import MenuLink from '@/components/Link/MenuLink'
 import DownButton from '@/components/DownButton/DownButton'
@@ -39,8 +40,8 @@ export default function Projects() {
 
   return (
     <div className='flex flex-col w-full h-screen text-white snap-center' id="projects">
-        <div className='flex flex-col lg:flex-row sm:p-6 pr-0 self-center w-[calc(100vw-4rem)] h-full m-16 rounded  border-aqua border'>
-            <div className='flex flex-col p-6 xl:ml-48 self-center m-lg:mt-auto'>
+        <div className='flex flex-col sm:p-6 pr-0 self-center w-[calc(100vw-4rem)] h-full m-16 rounded  border-aqua border'>
+            <div className='flex flex-col p-6 self-center align-middle mt-auto'>
                 <div className='lg:text-9xl sm:text-8xl text-5xl'>
                     Projects
                 </div>
@@ -48,8 +49,7 @@ export default function Projects() {
                     Cool things I built
                 </div>
             </div>
-            <div className='mt-auto mb-auto lg:mb-0 lg:mt-0 lg:ml-auto self-center flex flex-row overflow-x-scroll snap-x snap-mandatory scroll-smooth flex-nowrap max-w-[12rem] md:max-w-xs lg:max-w-sm xl:max-w-md 2xl:max-w-lg h-[50vh] gap-12 overflow-y-hidden lg:mr-6 cursor-grab m-lg:mb-auto' 
-                onMouseDown={(e) => onMouseDown(e)} onMouseMove={(e) => onMouseMove(e)} onMouseUp={(e) => onMouseUp(e)} onMouseLeave={(e) => onMouseUp(e)} ref={scrollref}>
+            <div className='grid overflow-hidden grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 auto-rows-auto w-full h-[calc(100vh-24rem)] self-center p-8 gap-2'>
                 <Card data={p1}/>
                 <Card data={p2}/>
                 <Card data={p3}/>
