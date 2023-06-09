@@ -12,16 +12,16 @@ interface Props {
 export default function Card(props: Props) {
 
     return (
-    <div className='h-full relative'>
+    <div className='h-full relative w-full flex-none'>
         <Image 
             className="z-0 top-0 h-full w-full self-center justify-center object-cover rounded-md absolute bg-slate-400" 
             alt="" src={props.data.img} draggable="false" 
         />
-        <div className='m-xs:hidden flex flex-col absolute top-0 h-full w-full opacity-0 bg-black/75 backdrop-blur-[7.5px] hover:opacity-100 transition-all ease-in-out p-6 text-aqua'>
+        <div className='flex flex-col absolute top-0 h-full w-full opacity-0 bg-black/75 backdrop-blur-[7.5px] hover:opacity-100 transition-all ease-in-out p-6 text-aqua'>
             <div className='text-[calc(1vw+1vh)] text-center mt-auto font-bold'>{props.data.name}</div>
-            <div className='text-[calc(.55vw+.55vh)] mb-auto font-medium'>
+            <div className='text-[calc(.65vw+.65vh)] mb-auto font-medium'>
                 {props.data.desc.map((item, key) => 
-                    <div className='mt-auto m-xs:hidden' key={key}>{item}</div>
+                    <div className='mt-auto text-center' key={key}>{item}</div>
                 )} 
             </div>
             {props.data.link && 
@@ -29,7 +29,7 @@ export default function Card(props: Props) {
                 <Link button={false} name={'visit repo'} link={props.data.link}/>
             </div>}
         </div>
-        <a className='m-xs:flex hidden top-0 h-full w-full absolute z-10' href={props.data.link} target="_blank" rel="noreferrer"></a>
+        {/* <a className='m-xs:flex hidden top-0 h-full w-full absolute z-10' href={props.data.link} target="_blank" rel="noreferrer"></a> */}
     </div>
 
 

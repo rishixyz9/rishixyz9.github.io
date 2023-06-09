@@ -49,12 +49,20 @@ export default function Projects() {
                     Cool things I built
                 </div>
             </div>
-            <div className='grid overflow-hidden grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 auto-rows-auto w-full h-[calc(100vh-24rem)] self-center p-8 gap-2'>
+            <div className='m-xs:hidden grid overflow-hidden grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 auto-rows-auto w-full h-[calc(100vh-24rem)] self-center p-8 gap-2'>
                 <Card data={p1}/>
                 <Card data={p2}/>
                 <Card data={p3}/>
                 <Card data={p4}/>
                 <Card data={p5}/>
+            </div>
+            <div className='sm:hidden flex flex-row overflow-x-scroll snap-x snap-mandatory scroll-smooth flex-nowrap w-[calc(100%-2rem)] h-1/2 gap-12 overflow-y-hidden lg:mr-6 cursor-grab m-lg:mb-auto self-center' 
+                onMouseDown={(e) => onMouseDown(e)} onMouseMove={(e) => onMouseMove(e)} onMouseUp={(e) => onMouseUp(e)} onMouseLeave={(e) => onMouseUp(e)} ref={scrollref}>
+                <div className='w-full flex-none snap-center'><Card data={p1}/></div>
+                <div className='w-full flex-none snap-center'><Card data={p2}/></div>
+                <div className='w-full flex-none snap-center'><Card data={p3}/></div>
+                <div className='w-full flex-none snap-center'><Card data={p4}/></div>
+                <div className='w-full flex-none snap-center'><Card data={p5}/></div>
             </div>
         </div> 
     </div>

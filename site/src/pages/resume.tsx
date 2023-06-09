@@ -44,9 +44,14 @@ export default function Resume() {
                     Places I have worked
                 </div>
             </div>
-            <div className='grid overflow-hidden md:grid-cols-2 auto-rows-auto w-full h-[calc(100vh-24rem)] self-center p-8 gap-2 object-center'>
+            <div className='m-xs:hidden grid overflow-hidden md:grid-cols-2 auto-rows-auto w-full h-[calc(100vh-24rem)] self-center p-8 gap-2 object-center'>
                 <Card data={e1}/>
                 <Card data={e2}/>
+            </div>
+            <div className='sm:hidden flex flex-row overflow-x-scroll snap-x snap-mandatory scroll-smooth flex-nowrap w-[calc(100%-2rem)] h-1/2 gap-12 overflow-y-hidden lg:mr-6 cursor-grab m-lg:mb-auto self-center' 
+                onMouseDown={(e) => onMouseDown(e)} onMouseMove={(e) => onMouseMove(e)} onMouseUp={(e) => onMouseUp(e)} onMouseLeave={(e) => onMouseUp(e)} ref={scrollref}>
+                <div className='w-full flex-none snap-center'><Card data={e1}/></div>
+                <div className='w-full flex-none snap-center'><Card data={e2}/></div>
             </div>
         </div> 
     </div>
