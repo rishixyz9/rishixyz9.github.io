@@ -20,8 +20,8 @@ export default function Contact() {
 
   return (
     <div className='flex flex-col w-full h-screen text-white snap-center' id="contact">
-        <div className='flex flex-col lg:flex-row sm:p-6 pr-0 self-center w-[calc(100vw-4rem)] h-full m-16 rounded  border-aqua border'>
-            <div className='flex flex-col p-6 xl:ml-48 self-center m-lg:mt-auto'>
+        <div className='flex flex-col sm:p-6 pr-0 self-center w-[calc(100vw-4rem)] h-full m-16 rounded  border-aqua border'>
+            <div className='flex flex-col p-6 xl:ml-48 self-center mt-auto'>
                 <div className='lg:text-9xl sm:text-8xl text-5xl'>
                     Get in contact with me
                 </div>
@@ -29,7 +29,7 @@ export default function Contact() {
                     fill out the form to reach out to me!
                 </div>
             </div>
-            <div className='w-[calc(10rem+15vw)] sm:w-96 self-center gap-6 flex flex-col  border-aqua border p-6 lg:ml-6 border-r-0 border-t-0 border-b-0 m-lg:mb-auto'>
+            <div className='w-[calc(15rem+15vw)] self-center  gap-6 flex flex-col p-6 mb-auto'>
                 <input className="text-black w-full rounded-sm pl-2 focus:outline-aqua outline-none transition-all ease-in-out" type="text" id="fname" name="fname" placeholder='name' ref={name}></input>
                 <input className="text-black w-full rounded-sm pl-2 focus:outline-aqua outline-none transition-all ease-in-out" type="text" id="email" name="email" placeholder='email' ref={email}></input>
                 <input className="text-black w-full rounded-sm pl-2 focus:outline-aqua outline-none transition-all ease-in-out" type="text" id="reason" name="email" placeholder='reason for reaching out' ref={reason}></input>

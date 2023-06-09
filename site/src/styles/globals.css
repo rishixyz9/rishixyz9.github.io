@@ -43,7 +43,7 @@ body {
     background-position-y: center;
     background-size: cover;
     object-fit: contain;
-    object-position: center;
+    object-position: left;
 }
 
 .abt-text {

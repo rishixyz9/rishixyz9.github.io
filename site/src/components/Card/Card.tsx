@@ -18,8 +18,8 @@ export default function Card(props: Props) {
             alt="" src={props.data.img} draggable="false" 
         />
         <div className='m-xs:hidden flex flex-col absolute top-0 h-full w-full opacity-0 bg-black/75 backdrop-blur-[7.5px] hover:opacity-100 transition-all ease-in-out p-6 text-aqua'>
-            <div className='md:text-2xl lg:text-4xl text-center mt-auto font-bold'>{props.data.name}</div>
-            <div className='text-sm lg:text-lg mb-auto font-medium'>
+            <div className='text-[calc(1vw+1vh)] text-center mt-auto font-bold'>{props.data.name}</div>
+            <div className='text-[calc(.55vw+.55vh)] mb-auto font-medium'>
                 {props.data.desc.map((item, key) => 
                     <div className='mt-auto m-xs:hidden' key={key}>{item}</div>
                 )} 
