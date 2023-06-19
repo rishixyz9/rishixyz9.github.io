@@ -12,6 +12,7 @@
     "@types/node": "18.15.11",
     "@types/react": "18.0.32",
     "@types/react-dom": "18.0.11",
+    "@vercel/analytics": "^1.0.1",
     "dragscroll": "^0.0.8",
     "emailjs-com": "^3.2.0",
     "eslint": "8.37.0",
