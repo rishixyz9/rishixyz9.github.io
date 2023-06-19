@@ -10,7 +10,7 @@ interface Props {
 export default function Card(props: Props) {
 
     return (
-    <div className='min-h-[480px] h-full relative md:w-[360px] flex-none self-center backdrop-blur-[2.5px] p-4 rounded-lg border-h-purple border'>
+    <div className='min-h-[480px] h-full relative md:w-[360px] self-center backdrop-blur-[2.5px] p-4 rounded-lg border-h-purple border'>
         <Image 
             className="z-0 top-0 h-[240px] w-full self-center justify-center object-cover rounded-md opacity" 
             alt="" src={props.data.img} draggable="false" 
