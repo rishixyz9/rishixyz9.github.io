@@ -15,7 +15,7 @@ export default function Resume() {
                     Places I worked
                 </div>
             </div>
-            <div className='grid grid-cols-1 xl:grid-cols-2 self-center p-8 gap-8 items-center text-center'>
+            <div className='grid grid-cols-1 xl:grid-cols-2 self-center p-8 gap-8 items-center text-center h-max'>
                 <Card data={e1}/>
                 <Card data={e2}/>
             </div>

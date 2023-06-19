@@ -12,7 +12,7 @@ export default function Card(props: Props) {
     return (
     <div className='min-h-[480px] h-full relative md:w-[360px] self-center backdrop-blur-[2.5px] p-4 rounded-lg border-h-purple border'>
         <Image 
-            className="z-0 top-0 h-[240px] w-full self-center justify-center object-cover rounded-md opacity" 
+            className="z-0 top-0 h-[240px] w-full self-center justify-center object-cover rounded-md opacity bg-white" 
             alt="" src={props.data.img} draggable="false" 
         />
         <div className='text-left mt-4 font-bold'>{props.data.name}</div>

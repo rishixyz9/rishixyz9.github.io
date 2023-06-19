@@ -119,9 +119,9 @@ export const e1: CardObject = {
     position: 'Software Engineering Intern',
     img: sf,
     desc: [
-        "Built end-to-end internal facing self-service tool to automate and simplify insurance program enrollment with policy holders",
-        "Front-end built with React.JS, and back-end is built with Lambda and API gateway which is invoked by the front-end to complete the necessary services. Web application is hosted on AWS S3 and deployed on Cloudfront to be used publicly within the intranet and used by 6+ teams daily",
-        "Worked on CI/CD pipeline to streamline and optimize time to deploy by at least 1 hour and automate manual components"
+        "Built end-to-end internal facing self-service tool to automate and simplify insurance program enrollment with policy holders and assist developers in testing service coverage across 7 test environments",
+        "Front-end built with React.JS, and back-end is built with AWS Lambda and API gateway to reduce response time latency to a maxiumum of 1s. Web application is hosted on AWS S3 and deployed on Cloudfront to be used publicly within the intranet and used by 6+ teams daily",
+        "Created a CI/CD pipeline to streamline and optimize confluent kafka component deployments by 1 hour and increase deployments by 30%"
     ],
 }
 
@@ -130,7 +130,7 @@ export const e2: CardObject = {
     position: 'Front End Architect',
     img: ev3,
     desc: [
-        "Worked with a 501c(3) organization on the front end of their website to better distribute information about the organization in an easy to access method",
+        "Worked with a 501c(3) organization on the front end of their website to better distribute information about the organization in an easy to access method and increase user engagement by 3%",
         "Designed and implemented several sub-pages and helped with the overall styling of the landing page using React.JS, HTML, CSS, and JavaScript"
     ],
 }
