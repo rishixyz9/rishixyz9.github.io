@@ -34,6 +34,7 @@ export default interface CardObject {
     desc: Array<string>,
     link?: string,
     img: string | StaticImageData,
+    stack?: Array<String>
     position?: string,
 
 }
@@ -46,6 +47,11 @@ export const p1: CardObject = {
         "Built with Next.JS, Tailwind, and React.JS",
         "Winner of the Twilio challenge at HackTX 2022"
     ],
+    stack: [
+        "Next.js",
+        "Tailwind",
+        "Flask"
+    ],
     link: "https://github.com/rishixyz9/SimpliFarm"
 }
 
@@ -55,6 +61,12 @@ export const p2: CardObject = {
     desc: [
         "Application to analyze the risk of a portfolio to help people take control of their finances",
         "Designed an intuitive UI using React.JS, Next.JS, and Tailwind"
+    ],
+    stack: [
+        "Next.js",
+        "Tailwind",
+        "Flask",
+
     ],
     link: "https://github.com/rishixyz9/Riskify"
 }
@@ -66,6 +78,10 @@ export const p3: CardObject = {
         "App to help students at the university of texas at dallas to find open rooms to study",
         "Designed and implemented front-end with Svelte-kit and a REST API"
     ],
+    stack: [
+        "Svelte",
+        "Svelte-Kit",
+    ],
     link: "https://github.com/rishixyz9/UTD-Rooms"
 }
 
@@ -76,6 +92,10 @@ export const p4: CardObject = {
         "Website to allow users to check if a skin spot is melanoma with 99% accuracy",
         "Built with Django, TensorFlow, and OpenCV",
     ],
+    stack: [
+        "Django",
+        "OpenCV",
+    ],
     link: "https://github.com/rishixyz9/Melanoma-Detector"
 }
 
@@ -85,6 +105,11 @@ export const p5: CardObject = {
     desc: [
         "Mobile application created to help airline flyers plan their flights effectively by utilizing geographic data and travel patterns",
         "Winner of the Best UI challenge at HackTAMU 2023"
+    ],
+    stack: [
+        "React Native",
+        "Flask",
+        "MongoDB"
     ],
     link: "https://github.com/raghavpillai/AAssistant"
 }
