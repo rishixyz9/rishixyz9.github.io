@@ -12,18 +12,18 @@ export default function Card(props: Props) {
     return (
     <div className='min-h-[480px] h-full flex flex-col relative md:w-[360px] self-center backdrop-blur-[2.5px] p-4 rounded-lg border-h-purple border'>
         <Image 
-            className="z-0 top-0 h-[240px] w-full self-center justify-center object-cover rounded-md opacity bg-white" 
+            className="z-0 top-0 h-[240px] w-full self-center justify-center object-cover object-center rounded-md opacity bg-white" 
             alt="" src={props.data.img} draggable="false" 
         />
         <div className='text-left mt-4 font-bold'>{props.data.name}</div>
         {props.data.desc.map((item, key) => 
-            <div className='text-left' key={key}>{item}</div>
+            <div className='text-left font-light text-sm sm:text-md ' key={key}>{item}</div>
         )} 
 
         {props.data.stack && 
-        <div className='flex flex-row absolute top-4 -right-[.75rem] border-text items-center text-white align-middle text-sm font-bold gap-4'>
+        <div className='flex flex-row absolute top-4 -right-[.75rem] border-text items-center text-white align-middle text-sm font-semibold gap-4'>
             {props.data.stack.map((item, key) => 
-                <div className='inline-block bg-[#0B0E17] ' key={key}>{item}</div>
+                <div className='inline-block bg-[#0B0E17]' key={key}>{item}</div>
             )} 
         </div>}
         

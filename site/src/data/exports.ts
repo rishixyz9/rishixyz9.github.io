@@ -118,6 +118,11 @@ export const e1: CardObject = {
     name: 'StateFarm',
     position: 'Software Engineering Intern',
     img: sf,
+    stack: [
+        "2022",
+        "to",
+        "Present"
+    ],
     desc: [
         "Built end-to-end internal facing self-service tool to automate and simplify insurance program enrollment with policy holders and assist developers in testing service coverage across 7 test environments",
         "Front-end built with React.JS, and back-end is built with AWS Lambda and API gateway to reduce response time latency to a maxiumum of 1s. Web application is hosted on AWS S3 and deployed on Cloudfront to be used publicly within the intranet and used by 6+ teams daily",
@@ -129,6 +134,11 @@ export const e2: CardObject = {
     name: 'EV3EVERYWHERE',
     position: 'Front End Architect',
     img: ev3,
+    stack: [
+        "2020",
+        "to",
+        "2022"
+    ],
     desc: [
         "Worked with a 501c(3) organization on the front end of their website to better distribute information about the organization in an easy to access method and increase user engagement by 3%",
         "Designed and implemented several sub-pages and helped with the overall styling of the landing page using React.JS, HTML, CSS, and JavaScript"
