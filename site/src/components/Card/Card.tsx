@@ -23,7 +23,7 @@ export default function Card(props: Props) {
         {props.data.stack && 
         <div className='flex flex-row absolute top-4 -right-[.75rem] border-text items-center text-white align-middle text-sm font-semibold gap-4'>
             {props.data.stack.map((item, key) => 
-                <div className='inline-block bg-[#0B0E17]' key={key}>{item}</div>
+                <div className='tracking-wide inline-block bg-[#0B0E17]' key={key}>{item}</div>
             )} 
         </div>}
         

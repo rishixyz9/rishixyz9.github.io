@@ -14,7 +14,7 @@ export default function Projects() {
                 <div className='lg:text-9xl sm:text-8xl text-5xl'>
                     Projects
                 </div>
-                <div className='text-[#A8A8A8] font-light text-sm sm:text-lg lg:pl-2 sm:pl-1 pl-[0.125rem] lg:mt-4 sm:mt-2 sm:w-1/2'>
+                <div className='text-[#A8A8A8] font-semibold text-sm sm:text-lg lg:pl-2 sm:pl-1 pl-[0.125rem] lg:mt-4 sm:mt-2 sm:w-1/2'>
                     This section is a display of all the different kinds of projects I have built. 
                     With each project, I aim to learn a different kind of technology and aim to solve 
                     a real world problem. So, hold onto your imagination and prepare to be dazzled by 
@@ -30,7 +30,7 @@ export default function Projects() {
             </div>
         </div> 
         <div className='absolute flex items-center mb-6 mt-6 ml-auto text-white border-text align-middle w-[1px] text-sm'>
-            <div className='inline-block bg-[#0B0E17] pt-6 pb-6'>
+            <div className='inline-block bg-[#0B0E17] pt-6 pb-6 tracking-wide'>
                 projects
             </div>
         </div>

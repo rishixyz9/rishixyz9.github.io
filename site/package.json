@@ -9,11 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@types/node": "18.15.11",
     "@types/react": "18.0.32",
     "@types/react-dom": "18.0.11",
     "@vercel/analytics": "^1.0.1",
     "dragscroll": "^0.0.8",
+    "emailjs": "^4.0.2",
     "emailjs-com": "^3.2.0",
     "eslint": "8.37.0",
     "eslint-config-next": "13.2.4",
