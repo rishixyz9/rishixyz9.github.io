@@ -61,7 +61,7 @@ export default function Contact() {
         </div>
     </div> 
         <div className='absolute flex items-center mb-6 mt-6 ml-auto text-white border-text align-middle w-[1px] text-sm'>
-            <div className='inline-block bg-[#0B0E17] pt-6 pb-6'>
+            <div className='inline-block bg-[#0B0E17] pt-6 pb-6 tracking-wide'>
                 contact
             </div>
         </div>
