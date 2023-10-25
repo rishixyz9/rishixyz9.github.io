@@ -1,11 +1,3 @@
-import Link from '@/components/Link/Link'
-import Card from '@/components/Card/Card'
-import typeS from '../../public/type-s.png'
-import {p1, p2, p3, p4, p5} from '../data/exports'
-import Image from 'next/image'
-import selfpic from '../../public/self-pic.jpg'
-import { useState, useRef } from 'react'
-
 export default function About() {
 
   return (

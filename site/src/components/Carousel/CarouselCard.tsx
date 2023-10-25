@@ -1,8 +1,7 @@
 import React from 'react';
-import { useState, useEffect, useRef } from 'react';
-import styles from './carousel.module.css'
+import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
-import Image, { StaticImageData } from 'next/image'
+import Image from 'next/image'
 
 export default function CarouselCard(props: any) {
 

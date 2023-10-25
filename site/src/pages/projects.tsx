@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import Card from '@/components/Card/Card'
 import {p1, p2, p3, p4, p5, p6} from '../data/exports'
 

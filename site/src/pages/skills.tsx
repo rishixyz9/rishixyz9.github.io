@@ -1,8 +1,4 @@
-import DownButton from '@/components/DownButton/DownButton'
 import Carousel from '@/components/Carousel/Carousel'
-import Head from 'next/head'
-import Card from '@/components/Card/Card'
-import { skills } from '@/data/exports'
 
 export default function Skills() {
 

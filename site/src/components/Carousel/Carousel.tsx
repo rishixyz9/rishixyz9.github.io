@@ -1,11 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import styles from './carousel.module.css'
-import Image, { StaticImageData } from 'next/image'
 import { skills } from '@/data/exports';
 import CarouselCard from './CarouselCard';
-// import { clearInterval } from 'timers';
-
 
 export default function Carousel() {
 
