@@ -146,6 +146,7 @@ export const e1: CardObject = {
     name: 'StateFarm',
     position: 'Software Engineering Intern',
     img: sf,
+    imgPos: "object-center",
     stack: [
         "2022",
         "to",
@@ -162,6 +163,7 @@ export const e2: CardObject = {
     name: 'EV3EVERYWHERE',
     position: 'Front End Architect',
     img: ev3,
+    imgPos: "object-center",
     stack: [
         "2020",
         "to",
