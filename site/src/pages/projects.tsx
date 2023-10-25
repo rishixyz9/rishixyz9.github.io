@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Card from '@/components/Card/Card'
-import {p1, p2, p3, p4, p5} from '../data/exports'
+import {p1, p2, p3, p4, p5, p6} from '../data/exports'
 
 export default function Projects() {
 
@@ -27,6 +27,7 @@ export default function Projects() {
                 <Card data={p3}/>
                 <Card data={p4}/>
                 <Card data={p5}/>
+                <Card data={p6}/>
             </div>
         </div> 
         <div className='absolute flex items-center mb-6 mt-6 ml-auto text-white border-text align-middle w-[1px] text-sm'>

@@ -56,13 +56,7 @@ body {
     font-size: clamp(12px, 1.5vh, 30px);
 }
 
-/* * {
-    margin: 0;
-    padding: 0;
-    outline: 1px solid #f00 !important;
-} */
-
-.proj {
+.proj { 
     text-indent: 0;
     padding-left: 0;
 }

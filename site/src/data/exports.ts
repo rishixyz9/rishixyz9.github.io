@@ -17,14 +17,20 @@ import flask from '../..//public/logos/flask-logo.png'
 import react from '../../public/logos/react-logo.png'
 import node from '../../public/logos/node-icon.png'
 import django from '../../public/logos/django-logo.png'
+import nextlogo from '../../public/logos/next-logo.png'
+import vue from '../../public/logos/vue.svg'
 import opencv from '../../public/logos/OpenCV-logo.png'
 import tf from '../../public/logos/tensorflow-logo.png'
 import pipeline from '../../public/logos/pipeline-logo.png'
 import aws from '../../public/logos/aws-logo.png'
+import lambda from '../../public/logos/lambda.svg'
+import cloudfront from '../../public/logos/cloudfront.svg'
+import apigateway from '../../public/logos/apigw.svg'
 import ps from '../../public/logos/postgresql-logo.png'
 import mongo from '../../public/logos/mongo-logo.png'
 import kb from '../../public/logos/kb-logo.png'
 import aa from '../../public/aassistant.jpg'
+import truthpilot from '../../public/truthpilot.jpg'
 
 
 import { StaticImageData } from 'next/image'
@@ -34,14 +40,15 @@ export default interface CardObject {
     desc: Array<string>,
     link?: string,
     img: string | StaticImageData,
+    imgPos: string,
     stack?: Array<String>
     position?: string,
-
 }
 
 export const p1: CardObject = {
-    name: 'S I M P L I F A R M',
+    name: 'SimpliFarm',
     img: simplifarm,
+    imgPos: "object-left",
     desc: [
         "Created an application to help farmers find optimal crop planting locations",
         "Built with Next.JS, Tailwind, and React.JS",
@@ -56,8 +63,9 @@ export const p1: CardObject = {
 }
 
 export const p2: CardObject = {
-    name: 'R I S K I F Y',
+    name: 'Riskify',
     img: riskify,
+    imgPos: "object-left",
     desc: [
         "Application to analyze the risk of a portfolio to help people take control of their finances",
         "Designed an intuitive UI using React.JS, Next.JS, and Tailwind"
@@ -72,8 +80,9 @@ export const p2: CardObject = {
 }
 
 export const p3: CardObject = {
-    name: 'UTD ROOMS',
+    name: 'UTD Rooms',
     img: utdrooms,
+    imgPos: "object-center",
     desc: [
         "App to help students at the university of texas at dallas to find open rooms to study",
         "Designed and implemented front-end with Svelte-kit and a REST API"
@@ -88,6 +97,7 @@ export const p3: CardObject = {
 export const p4: CardObject = {
     name: 'Melanoma Detector',
     img: meldetector,
+    imgPos: "object-left",
     desc: [
         "Website to allow users to check if a skin spot is melanoma with 99% accuracy",
         "Built with Django, TensorFlow, and OpenCV",
@@ -102,6 +112,7 @@ export const p4: CardObject = {
 export const p5: CardObject = {
     name: 'AAssisstant',
     img: aa,
+    imgPos: "object-center",
     desc: [
         "Mobile application created to help airline flyers plan their flights effectively by utilizing geographic data and travel patterns",
         "Winner of the Best UI challenge at HackTAMU 2023"
@@ -112,6 +123,23 @@ export const p5: CardObject = {
         "MongoDB"
     ],
     link: "https://github.com/raghavpillai/AAssistant"
+}
+
+export const p6: CardObject = {
+    name: 'TruthPilot',
+    img: truthpilot,
+    imgPos: "object-center",
+    desc: [
+        "Web application created to filter out fake news/hate speech from websites to create a more positive social media experience and get protection from misinformation",
+        "Winner of the Best UI challenge at HackTAMU 2023"
+    ],
+    stack: [
+        "Next.js",
+        "Flask",
+        "Hugging Face",
+        "Beautiful Soup"
+    ],
+    link: "https://devpost.com/software/truthpilot"
 }
 
 export const e1: CardObject = {
@@ -151,14 +179,20 @@ export const skills = {
         ['Svelte/Svelte-kit',svelte],
         ['Flask',flask],
         ['Node.js',node],
-        ['Django',django]
+        ['Django',django],
+        ['Next.js',nextlogo],
+        ['Vue', vue],
+        ['Next.js',react],
     ],
     libraries: [
-        ['OpenCV',opencv],
-        ['TensorFlow',tf],
+        ['DevExtreme', tf],
+        ['Express.js', tf],
         ['Recoil',tf],
         ['Redux',tf],
-        ['Discord.py',discord]
+        ['Discord.py',discord],
+        ['Beautiful Soup', tf],
+        ['OpenCV',opencv],
+        ['TensorFlow',tf],
     ],
     languages: [
         ['Python', py],
@@ -173,13 +207,13 @@ export const skills = {
     misc: [
         ['GitOps CI/CD', pipeline],
         ['AWS', aws],
-        ['Lambda', aws],
-        ['CloudFront', aws],
-        ['API Gateway', aws],
-        ['PostgreSQL', aws],
+        ['Lambda', lambda],
+        ['CloudFront', cloudfront],
+        ['API Gateway', apigateway],
+        ['PostgreSQL', ps],
         ['MongoDB', mongo], 
         ['Kubernetes', kb]
     ]
 }
 
-module.exports = {p1, p2, p3, p4, p5, e1, e2, skills};
+module.exports = {p1, p2, p3, p4, p5, p6, e1, e2, skills};

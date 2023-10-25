@@ -8,7 +8,8 @@ export default function Contact() {
     const email = useRef<any>(null)
     const reason = useRef<any>(null)
 
-    const submit = () => {      
+    const submit = () => {    
+      if(name.current.value && email.current.value && reason.current.value){  
         emailjs
           .send(
             'service_x9ir7lk',
@@ -34,11 +35,12 @@ export default function Contact() {
               alert("Ahh, something went wrong. Please try again.");
             }
           );
+        }
       };
 
   return (
     <div className='flex flex-col w-full h-max text-white snap-center p-8 pt-16 pb-16' id="resume">
-        <div className='flex flex-col sm:p-6 self-center w-full h-max rounded  border-aqua border-l'>
+        <div className='flex flex-col sm:p-6 self-center w-full h-max rounded border-aqua sm:border-r m-xs:border-l'>
             <div className='flex flex-col p-6 mt-auto'>
                 <div className='text-[#A8A8A8] font-light text-sm sm:text-lg lg:pl-2 sm:pl-1 pl-[0.125rem]'>
                     Interested?
@@ -52,15 +54,20 @@ export default function Contact() {
                 </div>
             </div>
             <div className='w-[calc(15rem+15vw)] self-center  gap-6 flex flex-col p-6 mb-auto'>
-                <input className="text-black w-full rounded-sm pl-2 focus:outline-aqua outline-none transition-all ease-in-out" type="text" id="fname" name="fname" placeholder='name' ref={name}></input>
-                <input className="text-black w-full rounded-sm pl-2 focus:outline-aqua outline-none transition-all ease-in-out" type="text" id="email" name="email" placeholder='email' ref={email}></input>
-                <input className="text-black w-full rounded-sm pl-2 focus:outline-aqua outline-none transition-all ease-in-out" type="text" id="reason" name="email" placeholder='reason for reaching out' ref={reason}></input>
+                <input className="text-black w-full rounded-sm pl-2 focus:outline-aqua outline-none transition-all ease-in-out" type="text" id="fname" name="fname" placeholder='Name' ref={name}></input>
+                <input className="text-black w-full rounded-sm pl-2 focus:outline-aqua outline-none transition-all ease-in-out" type="text" id="email" name="email" placeholder='Email' ref={email}></input>
+                <input className="text-black w-full rounded-sm pl-2 focus:outline-aqua outline-none transition-all ease-in-out" type="text" id="reason" name="email" placeholder='Reason for reaching out' ref={reason}></input>
                 <div className='h-6 bg-h-purple text-white link rounded' onClick={() => submit()}>
-                    <Link button={true} link={'/'} name={'Submit'}/>
+                    <Link button={true} link={'/'} name={'Contact'}/>
                 </div>       
             </div>
         </div> 
-        <div className='absolute flex items-center mb-6 mt-6 ml-auto text-white border-text align-middle w-[1px] text-sm'>
+        <div className='absolute flex sm:hidden items-center mb-6 mt-6 ml-auto text-white border-text align-middle w-[1px] text-sm'>
+            <div className='inline-block bg-[#0B0E17] pt-6 pb-6 tracking-wide'>
+                contact
+            </div>
+        </div>
+        <div className='hidden sm:flex right-8 absolute items-center mb-6 mt-6 ml-auto text-white border-text align-middle w-[1px] text-sm'>
             <div className='inline-block bg-[#0B0E17] pt-6 pb-6 tracking-wide'>
                 contact
             </div>

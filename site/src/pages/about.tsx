@@ -15,12 +15,12 @@ export default function About() {
                 <div className='lg:text-9xl sm:text-8xl text-5xl mt-auto'>
                     Hi!👋
                 </div>
-                <div className='text-[#A8A8A8] font-light inline-block mb-auto'>
-                    My name is Rishabh Vemparala and I am a Software Engineering intern at StateFarm and study <span className='text-aqua'>Computer Science</span> at the University of Texas at Dallas. 
+                <div className='text-[#A8A8A8] font-light inline-block mb-auto md:text-2xl'>
+                    My name is Rishabh Vemparala and I am a Software Engineer and study <span className='text-aqua'>Computer Science</span> at the University of Texas at Dallas. 
                     <br></br>
-                    Most of my experience is in fullstack web development, but I am always looking for cool new technologies to try out. 
+                    Most of my experience is in Fullstack Web Development, AWS, and DevOps, but I am always looking for cool new technologies to try out. 
                     <br></br>
-                    I enjoy spotting cool cars out in the wild and currently drive a 2003 Acura RSX <span className='italic'>TYPE<span className='text-[#f60203]'>-S</span></span>
+                    I enjoy spotting cool cars out in the wild and currently drive a 2023 Subaru <span className='tracking-wider font-bold text-[#0e4bef] italic'>BRZ</span>
                 </div>
             </div>
             <div className='z-0 w-[calc(100%-4rem)] left-[2rem] top-[2rem] h-[calc(100%-4rem)] absolute bg-white opacity-30 abt'>
