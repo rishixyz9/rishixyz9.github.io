@@ -8,6 +8,7 @@ import py from '../../public/logos/python-logo.png'
 import c from '../../public/logos/c-logo.png'
 import java from '../../public/logos/java-logo.png'
 import js from '../../public/logos/js-logo.png'
+import ts from '../../public/logos/ts.svg'
 import html from '../../public/logos/html-logo.png'
 import css from '../../public/logos/css-logo.png'
 import yaml from '../../public/logos/yaml-logo.png'
@@ -201,7 +202,7 @@ export const skills = {
         ['C/C++', c],
         ['Java', java],
         ['JavaScript', js],
-        ['TypeScript', js],
+        ['TypeScript', ts],
         ['HTML', html],
         ['CSS', css],
         ['YAML', yaml]
