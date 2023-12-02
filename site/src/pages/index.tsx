@@ -19,9 +19,9 @@ export default function Home() {
   const bgparallax = useRef<any>(null)
 
   const handleMove = (e: any) => {
-    if(bgparallax.current === null){return}
-    let _w = window.innerWidth/5;
-    let _h = window.innerHeight/5;
+    if (bgparallax.current === null) { return }
+    let _w = window.innerWidth / 5;
+    let _h = window.innerHeight / 5;
     let _mouseX = e.clientX;
     let _mouseY = e.clientY;
     let _depth1 = `${10 - (_mouseX - _w) * 0.0025}% ${10 - (_mouseY - _h) * 0.0025}%`;
@@ -39,17 +39,17 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" type="image/svg" href={logo.src}></link>
         <style>
-         @import url(&apos;https://fonts.googleapis.com/css2?family=Montserrat&family=Outfit:wght@100;200;300;400;500;600;700;800&display=swap&apos;);
+          @import url(&apos;https://fonts.googleapis.com/css2?family=Montserrat&family=Outfit:wght@100;200;300;400;500;600;700;800&display=swap&apos;);
         </style>
       </Head>
 
-      <div className='w-full max-h-screen h-screen flex flex-col snap-center'> 
+      <div className='w-full max-h-screen h-screen flex flex-col snap-center'>
 
         {/* Hero Section */}
         <div className='flex flex-row p-6 pr-0 self-center w-[calc(100vw-4rem)] h-full border border-aqua m-16 rounded'>
 
 
-          <div className='flex flex-col mt-auto w-full'>  
+          <div className='flex flex-col mt-auto w-full'>
             {/* row container */}
             <div className=' flex flex-row w-full'>
 
@@ -64,16 +64,16 @@ export default function Home() {
               </div>
 
               {/* menu */}
-              <div className='ml-auto lg:mr-60 mr-6 font-light lg:text-5xl md:text-4xl sm:flex flex-col hidden gap-1 self-center'>
-                  <Link button={false} name={'Projects'} link={'#projects'}/>
-                  <Link button={false} name={'Resume'} link={'#resume'}/>
-                  <Link button={false} name={'Contact'} link={'#contact'}/>
+              <div className='ml-auto lg:mr-60 mr-6 font-light lg:text-5xl md:text-4xl sm:flex flex-col hidden gap-2 self-center'>
+                <Link button={false} name={'<Projects />'} link={'#projects'} />
+                <Link button={false} name={'<Resume />'} link={'#resume'} />
+                <Link button={false} name={'<Contact />'} link={'#contact'} />
               </div>
             </div>
 
             <div className='flex flex-row ml-auto mr-6 gap-8'>
               <a href="https://www.linkedin.com/in/rishabh-vemparala-8b6155205/" target="_blank" rel="noreferrer">
-                <Image className='hover:scale-110 transition-transform ease-in-out hover:cursor-pointer m-xs:w-4' alt='#' src={linkedin}/>
+                <Image className='hover:scale-110 transition-transform ease-in-out hover:cursor-pointer m-xs:w-4' alt='#' src={linkedin} />
               </a>
               <a href="https://github.com/rishixyz9" target="_blank" rel="noreferrer">
                 <Image className='hover:scale-110 transition-transform ease-in-out hover:cursor-pointer m-xs:w-4' alt='#' src={gh} />
@@ -91,10 +91,10 @@ export default function Home() {
         </div>
 
 
-        
-      </div> 
+
+      </div>
       <About />
-      <Projects /> 
+      <Projects />
       <Resume />
       <Skills />
       <Contact />

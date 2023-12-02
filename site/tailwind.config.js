@@ -16,8 +16,9 @@ module.exports = {
         'misc': '#3423A6',
       },
       screens: {
-        'm-lg': {'max': '1024px'},
-        'm-xs': {'max': '639px'}
+        'm-lg': { 'max': '1024px' },
+        'm-xs': { 'max': '639px' },
+        'm-2xs': { 'max': '425px' },
       }
     }
   },

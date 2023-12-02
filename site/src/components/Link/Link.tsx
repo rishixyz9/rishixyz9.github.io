@@ -9,7 +9,7 @@ interface Props {
 
 export default function Link(props: Props) {
 
-    switch(props.button){
+    switch (props.button) {
         case true:
             return (
                 <div className={`font-semibold text-md text-white pl-4 pr-4 ${styles.link} flex flex-row`}>
@@ -18,12 +18,12 @@ export default function Link(props: Props) {
             )
         case false:
             return (
-                <div className={`font-semibold text-md text-white pl-4 pr-4 ${styles.link} flex flex-row`}>
+                <div className={`font-semibold text-md text-white pl-4 pr-4 ${styles.link} flex flex-row whitespace-nowrap`}>
                     {props.link[0] === '#' &&
-                    <a className='z-10 align-middle w-full' href={props.link}>{props.name}</a>}
+                        <a className='z-10 align-middle w-full' href={props.link}>{props.name}</a>}
                     {props.link[0] !== '#' &&
-                    <a className='z-10 align-middle w-full' href={props.link} target="_blank" rel="noreferrer">{props.name}</a>}
+                        <a className='z-10 align-middle w-full whitespace-nowrap' href={props.link} target="_blank" rel="noreferrer">{props.name}</a>}
                 </div>
-            )   
+            )
     }
 }

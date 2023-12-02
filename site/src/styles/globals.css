@@ -33,9 +33,12 @@ body {
 }
 
 .card {
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -46,17 +49,15 @@ body {
 
 .abt {
     background-image: url('../../public/self-pic.jpg');
-    background-position-y: center;
+    background-position: top center;
     background-size: cover;
-    object-fit: contain;
-    object-position: left;
 }
 
 .abt-text {
     font-size: clamp(12px, 1.5vh, 30px);
 }
 
-.proj { 
+.proj {
     text-indent: 0;
     padding-left: 0;
 }
