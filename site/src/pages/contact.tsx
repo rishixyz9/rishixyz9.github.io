@@ -39,7 +39,7 @@ export default function Contact() {
   };
 
   return (
-    <div className='flex flex-col w-full h-max text-white snap-center p-8 pt-16 pb-16' id="resume">
+    <div className='flex flex-col w-full h-max text-white snap-center p-8 pt-16 pb-16' id="contact">
       <div className='flex flex-col sm:p-6 self-center w-full h-max rounded border-aqua sm:border-r m-xs:border-l'>
         <div className='flex flex-col p-6 mt-auto'>
           <div className='text-[#A8A8A8] font-light text-sm sm:text-lg lg:pl-2 sm:pl-1 pl-[0.125rem]'>

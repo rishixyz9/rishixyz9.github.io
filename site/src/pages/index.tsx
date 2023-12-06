@@ -24,9 +24,9 @@ export default function Home() {
     let _h = window.innerHeight / 5;
     let _mouseX = e.clientX;
     let _mouseY = e.clientY;
-    let _depth1 = `${10 - (_mouseX - _w) * 0.0025}% ${10 - (_mouseY - _h) * 0.0025}%`;
-    let _depth2 = `${10 - (_mouseX - _w) * 0.005}% ${10 - (_mouseY - _h) * 0.005}%`;
-    let _depth3 = `${10 - (_mouseX - _w) * 0.0075}% ${10 - (_mouseY - _h) * 0.0075}%`;
+    let _depth1 = `${10 - (_mouseX - _w) * 0.00125}% ${10 - (_mouseY - _h) * 0.00125}%`;
+    let _depth2 = `${10 - (_mouseX - _w) * 0.0025}% ${10 - (_mouseY - _h) * 0.0025}%`;
+    let _depth3 = `${10 - (_mouseX - _w) * 0.00375}% ${10 - (_mouseY - _h) * 0.00375}%`;
     let x = `${_depth3}, ${_depth2}, ${_depth1}`;
     bgparallax.current.style.backgroundPosition = x;
   }

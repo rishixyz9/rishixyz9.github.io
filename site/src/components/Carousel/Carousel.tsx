@@ -1,5 +1,5 @@
-import React from 'react';
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
+import gsap from 'gsap';
 import { skills } from '@/data/exports';
 import CarouselCard from './CarouselCard';
 
@@ -7,19 +7,18 @@ export default function Carousel() {
 
     const [active, setActive] = useState(0)
 
-    const data = [skills.frameworks, skills.languages, skills.libraries, skills.misc]  
+    const data = [skills.frameworks, skills.languages, skills.libraries, skills.misc]
 
 
     useEffect(() => {
-        const interval = setInterval(() => {  setActive((active+1)%4)}, 3000)
+        const interval = setInterval(() => { setActive((active + 1) % 4) }, 5000)
         return () => clearInterval(interval)
+        // gsap.killTweensOf('.carousel-ref > * ')
     }, [active])
-    
+
     const handleClick = (e: any) => {
         setActive(parseInt(e.target.id))
     }
-
-    // // //
 
     return (
         <div className='w-full self-center flex sm:flex-col flex-col-reverse overflow-hidden text-black bg-transparent rounded-md border border-aqua p-4'>

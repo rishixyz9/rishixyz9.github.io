@@ -51,10 +51,22 @@ body {
     background-image: url('../../public/self-pic.jpg');
     background-position: top center;
     background-size: cover;
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
 }
 
 .abt-text {
     font-size: clamp(12px, 1.5vh, 30px);
+
+    &>span {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        /* Add a text shadow for depth */
+        background: rgba(255, 255, 255, 0.1);
+        /* Optional: subtle background for contrast */
+    }
 }
 
 .proj {

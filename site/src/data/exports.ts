@@ -14,14 +14,16 @@ import css from '../../public/logos/css-logo.png'
 import yaml from '../../public/logos/yaml-logo.png'
 import svelte from '../../public/logos/svelte-logo.png'
 import discord from '../../public/logos/discord-logo.png'
-import flask from '../..//public/logos/flask-logo.png'
+import flask from '../..//public/logos/flask-logo.svg'
 import react from '../../public/logos/react-logo.png'
 import node from '../../public/logos/node-icon.png'
 import django from '../../public/logos/django-logo.png'
 import nextlogo from '../../public/logos/next-logo.png'
 import vue from '../../public/logos/vue.svg'
-import opencv from '../../public/logos/OpenCV-logo.png'
-import tf from '../../public/logos/tensorflow-logo.png'
+import opencv from '../../public/logos/OpenCV-logo.svg'
+import recoil_logo from '../../public/logos/recoil-js.svg'
+import rdx from '../../public/logos/redux.svg'
+import tf from '../../public/logos/tensorflow-logo.svg'
 import pipeline from '../../public/logos/pipeline-logo.png'
 import aws from '../../public/logos/aws-logo.png'
 import lambda from '../../public/logos/lambda.svg'
@@ -29,10 +31,12 @@ import cloudfront from '../../public/logos/cloudfront.svg'
 import apigateway from '../../public/logos/apigw.svg'
 import ps from '../../public/logos/postgresql-logo.png'
 import mongo from '../../public/logos/mongo-logo.png'
-import kb from '../../public/logos/kb-logo.png'
+import kb from '../../public/logos/kb-logo.svg'
 import aa from '../../public/aassistant.jpg'
 import truthpilot from '../../public/truthpilot.jpg'
-
+import devx from '../../public/logos/devx.png'
+import exprs from '../../public/logos/express.png'
+import bs4 from '../../public/logos/bs4.png'
 
 import { StaticImageData } from 'next/image'
 
@@ -178,24 +182,24 @@ export const e2: CardObject = {
 
 export const skills = {
     frameworks: [
-        ['React.JS',react],
-        ['Svelte/Svelte-kit',svelte],
-        ['Flask',flask],
-        ['Node.js',node],
-        ['Django',django],
-        ['Next.js',nextlogo],
+        ['React.JS', react],
+        ['Svelte/Svelte-kit', svelte],
+        ['Flask', flask],
+        ['Node.js', node],
+        ['Django', django],
+        ['Next.js', nextlogo],
         ['Vue', vue],
-        ['Next.js',react],
+        ['Next.js', react],
     ],
     libraries: [
-        ['DevExtreme', tf],
-        ['Express.js', tf],
-        ['Recoil',tf],
-        ['Redux',tf],
-        ['Discord.py',discord],
-        ['Beautiful Soup', tf],
-        ['OpenCV',opencv],
-        ['TensorFlow',tf],
+        ['DevExtreme', devx],
+        ['Express.js', exprs],
+        ['Recoil', recoil_logo],
+        ['Redux', rdx],
+        ['Discord.py', discord],
+        ['Beautiful Soup', bs4],
+        ['OpenCV', opencv],
+        ['TensorFlow', tf],
     ],
     languages: [
         ['Python', py],
@@ -214,9 +218,9 @@ export const skills = {
         ['CloudFront', cloudfront],
         ['API Gateway', apigateway],
         ['PostgreSQL', ps],
-        ['MongoDB', mongo], 
+        ['MongoDB', mongo],
         ['Kubernetes', kb]
     ]
 }
 
-module.exports = {p1, p2, p3, p4, p5, p6, e1, e2, skills};
+module.exports = { p1, p2, p3, p4, p5, p6, e1, e2, skills };
